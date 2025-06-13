@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="estilo.css">
+  <title>Desarrollador FullStack</title>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("tzEh-ML_u3OCN2vaL");
+    })();
+  </script>
+</head>
+
+<body>
+<!-- SECCION I N I C I O -->
+<section id="inicio">
+  <div class="contenido">
+    <header>
+      <div class="contenido-header">
+        <h1>/JC/</h1>
+        <nav id="nav" class="">
+          <ul id="links">
+            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+          </ul>
+        </nav>
+
+        <!-- Icono del menu responsive -->
+        <div id="icono-nav" onclick="responsiveMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+
+        <div class="redes">
+          <a href="https://github.com/joselaguilarhz"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/juan-carlos-filter/"><i
+                  class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </header>
+    <div class="presentacion">
+      <p class="bienvenida">Bienvenidos</p>
+      <h2>Soy <span>Jose Luis Aguilar</span>, Programador FullStack</h2>
+      <p class="descripcion">Soy programador FullStack y estoy realizando mis prácticas tras finalizar DAM.
+        Tengo experiencia en Java, Kotlin, SQL, Oracle, MySQL, Spring, Angular, PHP, Laravel...</p>
+      <p class="descripcion">Quiero desarrollarme como programador, iniciando en backend o frontend para terminar siendo
+        un buen programador FullStack</p>
+      <p class="descripcion">Busco un equipo donde pueda aportar y seguir creciendo en un entorno de
+        innovación y desarrollo de software.</p>
+
+      <a href="#portfolio">Ir a Proyectos</a>
+    </div>
+  </div>
+</section>
+
+<!-- SECCION S O B R E M I -->
+<section id="sobremi">
+  <div class="contenedor-foto">
+    <img src="img/foto.png" alt="">
+  </div>
+  <div class="sobremi">
+    <p class="titulo-seccion">Sobre Mi</p>
+    <h2>Hola, Soy <span>Jose Luis Aguilar</span> </h2>
+    <h3>Programador FullStack</h3>
+    <p>Actualmente soy estudiante, terminando mis practicas y deseando formar parte del mundo laboral.
+      Es mi hobbie y me gusta aprender y
+      mejorar cada día.</p>
+    <p>En un futuro me gustaría dedicarme al comienzo a la programación (preferentemente FullStack o backend)
+      aunque me
+      gusta ambas
+      partes y por eso tengo como meta ser Full stack con la finalidad de trabajar en proyectos que me
+      permitan
+      crecer y aprender.</p>
+    <a
+            href="https://www.canva.com/design/DAGV0imoyRw/fUXLBxf6AJE05mbk6kZ0nA/view?utm_content=DAGV0imoyRw&utm_campaign=designshare&utm_medium=link&utm_source=editor">Descargar
+      CV</a>
+  </div>
+</section>
+
+<!-- SECCION S E R V I C I O S -->
+<section id="servicios">
+  <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+  <div class="fila">
+    <div class="servicio">
+      <span class="icono"> <i class="fa-brands fa-java"></i></span>
+      <h4>Lenguaje JAVA</h4>
+      <hr>
+      <ul class="servicios-tag">
+        <li>Backend</li>
+        <li>Interfaces</li>
+        <li>BBDD</li>
+      </ul>
+      <p>Especializado en desarrollo backend con Java, integración con bases de datos, microservicios con
+        Spring, hilos etc..</p>
+    </div>
+    <div class="servicio">
+      <span class="icono"><i class="fa-brands fa-android"></i></span>
+      <h4>Android</h4>
+      <hr>
+      <ul class="servicios-tag">
+        <li>Backend</li>
+        <li>Android</li>
+        <li>Animación</li>
+
+      </ul>
+      <p>Experiencia en desarrollo de aplicaciones móviles con Kotlin y Java, incluyendo animaciones y gestión
+        de datos.</p>
+    </div>
+    <div class="servicio">
+      <span class="icono"><i class="fa-brands fa-angular"></i></span>
+      <h4>SpringBoot, Angular</h4>
+      <hr>
+      <ul class="servicios-tag">
+        <li>FullStack</li>
+      </ul>
+      <p>Desarrollo de aplicaciones web FullStack con Spring Boot para backend y Angular para frontend,
+        optimizando rendimiento y escalabilidad.</p>
+    </div>
+  </div>
+  <div class="fila">
+    <div class="servicio">
+      <span class="icono"><i class="fa-solid fa-database"></i></span>
+      <h4>Base de datos</h4>
+      <hr>
+      <ul class="servicios-tag">
+        <li>Backend</li>
+        <li>BBDD</li>
+        <li>Persistencia</li>
+      </ul>
+      <p>Gestión e integración de bases de datos como MySQL, Oracle SQL y PL/SQL, incluyendo conexiones desde
+        Java y optimización de consultas.</p>
+    </div>
+    <div class="servicio">
+      <span class="icono"><i class="fa-brands fa-html5"></i></span>
+      <h4>Programador Web</h4>
+      <hr>
+      <ul class="servicios-tag">
+        <li>Frontend</li>
+        <li>Web</li>
+        <li>Graphic</li>
+      </ul>
+      <p>Desarrollo de sitios y aplicaciones web con HTML, CSS, JavaScript, PHP y XML, utilizando frameworks
+        como Laravel para backend.</p>
+    </div>
+    <div class="servicio">
+      <span class="icono"><i class="fa-solid fa-person-circle-question"></i></span>
+      <h4>Otros</h4>
+      <hr>
+      <ul class="servicios-tag">
+        <li>Frontend</li>
+        <li>Backend</li>
+
+      </ul>
+      <p>En constante aprendizaje de nuevas tecnologías, incluyendo Python, C# y frameworks como Laravel,
+        Spring y Angular.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SECCION H A B I L I D A D E S -->
+<div class="contenedor-skills" id="skills">
+  <h3>HABILIDADES </h3>
+  <div class="skill">
+    <div class="info">
+      <p> <span class="lista"> </span>Java</p>
+      <span class="nivel">Medio</span>
+    </div>
+
+    <div class="barra">
+      <div class="" id="java"></div>
+    </div>
+  </div>
+  <div class="skill">
+    <div class="info">
+      <p> <span class="lista"> </span>SQL - MySQL, Oracle</p>
+      <span class="nivel">Medio</span>
+    </div>
+
+    <div class="barra">
+      <div class="" id="bd"></div>
+    </div>
+  </div>
+  <div class="skill">
+    <div class="info">
+      <p> <span class="lista"> </span>Spring - Spring boot, Spring MVC, Spring Framework</p>
+      <span class="nivel">Medio</span>
+    </div>
+
+    <div class="barra">
+      <div class="" id="spring"></div>
+    </div>
+  </div>
+  <div class="skill">
+    <div class="info">
+      <p> <span class="lista"> </span>TypeScript, Angular</p>
+      <span class="nivel">bajo - Medio</span>
+    </div>
+
+    <div class="barra">
+      <div class="" id="js-front"></div>
+    </div>
+  </div>
+  <div class="skill">
+    <div class="info">
+      <p> <span class="lista"> </span>Kotlin - Jetpack Compose</p>
+      <span class="nivel">Medio</span>
+    </div>
+
+    <div class="barra">
+      <div class="" id="kotlin"></div>
+    </div>
+  </div>
+</div>
+
+<!-- SECCION PORTAFOLIO -->
+<section id="portfolio">
+  <h3 class="titulo-seccion">Mis Proyectos</h3>
+  <div class="fila">
+    <div class="proyecto">
+      <div class="overlay"></div>
+      <a href="https://github.com/JuanCarlos92/SpringBoot-MicroServicios-AgenciaViajes.git">
+        <img src="img/AgenciaViajesSpring.png" alt=""></a>
+      <div class="info">
+        <h4>Agencia Viajes Spring Microservicios</h4>
+        <p>Spring, Angular</p>
+      </div>
+    </div>
+    <div class="proyecto">
+      <div class="overlay"></div>
+      <a href="https://github.com/JuanCarlos92/AndroidJuego2D.git">
+        <img src="img/BirdWars.png" alt=""></a>
+      <div class="info">
+        <h4>Juego 2D Android</h4>
+        <p>Android Java</p>
+      </div>
+    </div>
+    <div class="proyecto">
+      <div class="overlay"></div>
+      <a href="https://github.com/JuanCarlos92/ProyectoFinalCJ_TresEnRayas.git">
+        <img src="img/diplomaCimientoJava.png" alt=""></a>
+      <div class="info">
+        <h4>Proyecto Final Certificado C.Java</h4>
+        <p>Backend</p>
+      </div>
+    </div>
+  </div>
+  <div class="fila">
+    <div class="proyecto">
+      <div class="overlay"></div>
+      <a href="https://github.com/JuanCarlos92/ProyectADD_U1_GestorLibrosXML.git">
+        <img src="img/MenuGestorlibrosXML.png" alt=""></a>
+      <div class="info">
+        <h4>Proyecto Acceso a Datos 2ºDAM</h4>
+        <p>java JAXB</p>
+      </div>
+    </div>
+    <div class="proyecto">
+      <div class="overlay"></div>
+      <a href="https://github.com/JuanCarlos92/ProyectADD_U2_MySQL_JAVA.git">
+        <img src="img/ProyectAdd_U2.png" alt=""></a>
+      <div class="info">
+        <h4>Proyecto Acceso a Datos 2ªDAM</h4>
+        <p>Java JDBC</p>
+      </div>
+    </div>
+    <div class="proyecto">
+      <div class="overlay"></div>
+      <a href="https://github.com/JuanCarlos92/KotlinComposeT1_AppListaCompraMejorada.git">
+        <img src="img/kotlinListaCompra.png" alt=""></a>>
+      <div class="info">
+        <h4>App Kotlin Compose</h4>
+        <p>Kotlin</p>
+      </div>
+    </div>
+  </div>
+  <div class="fila">
+    <div class="proyecto">
+      <div class="overlay"></div>
+      <a href="https://github.com/JuanCarlos92/TFG.git">
+        <img src="img/monsterhunter.jpg" alt=""></a>
+      <div class="info">
+        <h4>SpringBoot con angular e ionic</h4>
+        <p>TFG</p>
+      </div>
+    </div>
+    <div class="proyecto">
+      <div class="overlay"></div>
+      <a href="https://github.com/JuanCarlos92/Hibernate.git">
+        <img src="img/Hibernate.png" alt=""></a>
+      <div class="info">
+        <h4>CRUD Hibernate</h4>
+        <p>Hibernate, JPA</p>
+      </div>
+    </div>
+    <div class="proyecto">
+      <div class="overlay"></div>
+      <a href="https://github.com/JuanCarlos92/ChatSocket.git">
+        <img src="img/ChatSocket.png" alt=""></a>
+      <div class="info">
+        <h4>Chat con socket Cliente - Servidor</h4>
+        <p>Socket Java servidor y cliente Android</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECCTION C O N T A C T O -->
+<section id="contacto">
+  <h3 class="titulo-seccion">Contacto</h3>
+  <div class="contenedor-form">
+    <form id="contact-form" onsubmit="sendEmail(event)">
+      <div class="fila mitad">
+        <input type="text" name="user_name" placeholder="Nombre Completo *" class="input-mitad">
+        <input type="email" name="user_email" placeholder="Dirección de Email" class="input-mitad">
+      </div>
+      <div class="fila">
+        <input type="text" name="subject" placeholder="Tema..." class="input-full">
+      </div>
+      <div class="fila">
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Tu Mensaje..."
+                              class="input-full"></textarea>
+      </div>
+
+      <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+    </form>
+  </div>
+</section>
+
+<!-- SECCION FOOTER -->
+<footer>
+  <div class="redes">
+    <a href="https://github.com/joselaguilarhz"><i class="fa-brands fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/juan-carlos-filter/"><i class="fa-brands fa-linkedin"></i></a>
+  </div>
+
+</footer>
+
+<script src="script.js"></script>
+</body>
+
+</html>
