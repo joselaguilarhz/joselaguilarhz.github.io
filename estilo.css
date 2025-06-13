@@ -41,7 +41,7 @@ html {
 
 #inicio .contenido header .contenido-header h1 {
     text-align: center;
-    color: #ff5080;
+    color: #3399ff;
 }
 
 #inicio .contenido header .contenido-header nav ul {
@@ -59,7 +59,7 @@ html {
 }
 
 #inicio .contenido header .contenido-header nav ul li a:hover {
-    color: #ff5080;
+    color: #3399ff;
 }
 
 #inicio .contenido header .contenido-header .redes a {
@@ -71,11 +71,11 @@ html {
 }
 
 #inicio .contenido header .contenido-header .redes a:hover {
-    color: #ff5080;
+    color: #3399ff;
 }
 
 #inicio .contenido header .contenido-header .seleccionado {
-    color: #ff5080;
+    color: #3399ff;
 }
 
 #inicio .contenido .presentacion {
@@ -104,7 +104,7 @@ html {
 
 #inicio .contenido .presentacion h2 span {
     font-size: 25px;
-    color: #ff5080;
+    color: #3399ff;
 }
 
 #inicio .contenido .presentacion .descripcion {
@@ -128,12 +128,30 @@ html {
 }
 
 #inicio .contenido .presentacion a:hover {
-    background-color: #ff5080;
+    background-color: #3399ff;
 }
 
 #icono-nav {
     color: #fff;
     display: none;
+}
+
+    /* ■ RESET estilo botón para enlaces con clase .no-boton */
+a.no-boton {
+  display: inline;          /* volver a texto en línea */
+  padding: 0;               /* sin relleno */
+  border: none;             /* sin borde */
+  border-radius: 0;         /* sin radio */
+  background: none;         /* sin fondo */
+  font-weight: normal;      /* peso normal */
+  text-decoration: underline; /* subrayado por defecto */
+  color: inherit;           /* hereda color del texto circundante */
+  transition: none;         /* sin transición hover */
+}
+a.no-boton:hover {
+  /* si quieres un hover sencillo: */
+  color: #3399ff;
+  text-decoration: underline;
 }
 
 /* *********************/
@@ -144,7 +162,7 @@ html {
     max-width: 1100px;
     margin: auto;
     padding: 100px 15px;
-    color: #111135;
+    color: #1a1a66;
     display: flex;
 }
 
@@ -167,9 +185,9 @@ html {
 #sobremi .sobremi .titulo-seccion {
     font-size: 22px;
     text-transform: uppercase;
-    color: #111135;
+    color: #1a1a66;
     text-decoration: underline;
-    text-decoration-color: #d3d3d3;
+    text-decoration-color: #c3d3e3;
     text-decoration-thickness: 5px;
 }
 
@@ -181,7 +199,7 @@ html {
 }
 
 #sobremi .sobremi h2 span {
-    color: #ff5080;
+    color: #3399ff;
 }
 
 #sobremi .sobremi h3 {
@@ -195,7 +213,7 @@ html {
 #sobremi .sobremi p {
     font-size: 14px;
     line-height: 25px;
-    color: #565656;
+    color: #536683;
     margin-bottom: 12px;
 }
 
@@ -211,7 +229,7 @@ html {
 }
 
 #sobremi .sobremi a:hover {
-    background-color: #ff5080;
+    background-color: #3399ff;
     color: #fff;
 }
 
@@ -229,9 +247,9 @@ html {
     text-align: center;
     font-size: 22px;
     text-transform: uppercase;
-    color: #111135;
+    color: #1a1a66;
     text-decoration: underline;
-    text-decoration-color: #d3d3d3;
+    text-decoration-color: #c3d3e3;
     text-decoration-thickness: 5px;
 }
 
@@ -252,7 +270,7 @@ html {
 }
 
 #servicios .fila .servicio:hover {
-    box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
+    box-shadow: 5px 5px 10px #536683, -5px -5px 10px #8391a1;
 }
 
 #servicios .fila .servicio .icono {
@@ -260,7 +278,7 @@ html {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: #d3d3d3;
+    background-color: #c3d3e3;
     padding: 20px;
     margin-bottom: 25px;
 }
@@ -294,7 +312,7 @@ html {
 /* *********************/
 
 .contenedor-skills {
-    background: linear-gradient(#eb5a5acc, rgba(33, 16, 16, 0.8)), url("img/fondo-skills.jpg");
+    background: linear-gradient(#3399ffcc, rgba(33, 16, 16, 0.8)), url("img/fondo-skills.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -323,93 +341,21 @@ html {
 }
 
 .contenedor-skills .skill .barra {
-    background-color: #919191;
+    background-color: #8391a1;
     width: 100%;
     height: 6px;
     margin: 10px 0px;
 }
 
-.contenedor-skills .skill .barra .barra-progreso1 {
-    background-color: #fff;
-    width: 100%;
-    height: 6px;
-    /*animation: progreso1 2s forwards;*/
-}
-
-.contenedor-skills .skill .barra .barra-progreso2 {
-    background-color: #fff;
-    width: 100%;
-    height: 6px;
-    /*animation: progreso2 2s forwards;*/
-}
-
-.contenedor-skills .skill .barra .barra-progreso3 {
-    background-color: #fff;
-    width: 100%;
-    height: 6px;
-    /*animation: progreso3 2s forwards;*/
-}
-
-.contenedor-skills .skill .barra .barra-progreso4 {
-    background-color: #fff;
-    width: 100%;
-    height: 6px;
-    /*animation: progreso4 2s forwards;*/
-
-}
-
+.contenedor-skills .skill .barra .barra-progreso1,
+.contenedor-skills .skill .barra .barra-progreso2,
+.contenedor-skills .skill .barra .barra-progreso3,
+.contenedor-skills .skill .barra .barra-progreso4,
 .contenedor-skills .skill .barra .barra-progreso5 {
     background-color: #fff;
     width: 100%;
     height: 6px;
-    /*animation: progreso5 2s forwards;*/
-
 }
-
-/*
-@keyframes progreso1 {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 77%;
-    }
-}
-
-@keyframes progreso2 {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 65%;
-    }
-}
-
-@keyframes progreso3 {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 70%;
-    }
-}
-
-@keyframes progreso4 {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 84%;
-    }
-}
-@keyframes progreso5 {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 75%;
-    }
-} */
 
 /* *********************/
 /* seccion P O R T F O L I O */
@@ -425,9 +371,9 @@ html {
     text-align: center;
     font-size: 22px;
     text-transform: uppercase;
-    color: #111135;
+    color: #1a1a66;
     text-decoration: underline;
-    text-decoration-color: #d3d3d3;
+    text-decoration-color: #c3d3e3;
     text-decoration-thickness: 5px;
 }
 
@@ -448,7 +394,6 @@ html {
 #portfolio .fila .proyecto img {
     width: 100%;
     height: 100%;
-;
     filter: grayscale(1);
     object-fit: cover;
     transition: .5s;
@@ -462,7 +407,7 @@ html {
     position: absolute;
     left: 0px;
     background-color: rgba(0, 0, 0, 0.8);
-    color: #ff5080;
+    color: #3399ff;
     width: 100%;
     padding: 10px;
     opacity: 0;
@@ -486,6 +431,13 @@ html {
 
 #contacto .titulo-seccion {
     margin-bottom: 20px;
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #1a1a66;
+    text-decoration: underline;
+    text-decoration-color: #c3d3e3;
+    text-decoration-thickness: 5px;
 }
 
 #contacto .contenedor-form {
@@ -507,7 +459,7 @@ html {
     padding: 20px;
     border-radius: 20px;
     border: none;
-    border: 1px solid #919191;
+    border: 1px solid #8391a1;
 }
 
 #contacto .contenedor-form .mitad input {
@@ -516,16 +468,6 @@ html {
 
 #contacto .contenedor-form .input-full {
     width: 100%;
-}
-
-#contacto .titulo-seccion {
-    text-align: center;
-    font-size: 22px;
-    text-transform: uppercase;
-    color: #111135;
-    text-decoration: underline;
-    text-decoration-color: #d3d3d3;
-    text-decoration-thickness: 5px;
 }
 
 #contacto .btn-enviar {
@@ -537,7 +479,7 @@ html {
 }
 
 #contacto .btn-enviar:hover {
-    background-color: #ff5080;
+    background-color: #3399ff;
     color: #fff;
 }
 
@@ -669,4 +611,6 @@ footer a {
         width: 100%;
         margin-bottom: 15px;
     }
+
+
 }
