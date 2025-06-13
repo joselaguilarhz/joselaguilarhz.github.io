@@ -24,23 +24,6 @@ function responsiveMenu() {
     }
 }
 
-//detecto el scrolling para aplicar la animación del la barra de habilidades
-window.onscroll = function() { efectoHabilidades() };
-
-//funcion que aplica la animación de la barra de habilidades
-function efectoHabilidades() {
-    var skills = document.getElementById("skills");
-    var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
-    if (distancia_skills >= 300) {
-        document.getElementById("spring").classList.add("barra-progreso1");
-        document.getElementById("js-front").classList.add("barra-progreso2");
-        document.getElementById("bd").classList.add("barra-progreso3");
-        document.getElementById("java").classList.add("barra-progreso4");
-        document.getElementById("kotlin").classList.add("barra-progreso5");
-
-    }
-
-}
 function sendEmail(event) {
     event.preventDefault(); // Evita el envío tradicional del formulario
 
@@ -59,8 +42,8 @@ function sendEmail(event) {
     };
 
     // Llamada a EmailJS para enviar el correo
-    emailjs.send("service_wa2tu4d", "template_amn12gd", params)
-        .then(function(response) {
+            emailjs.send("service_26nikh4", "template_4we8llh", params)
+            .then(function(response) {
             alert("Mensaje enviado con éxito!"); // Mensaje de éxito
             document.getElementById("contact-form").reset(); // Reinicia el formulario
         }, function(error) {
