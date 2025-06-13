@@ -136,23 +136,23 @@ html {
     display: none;
 }
 
-    /* ■ RESET estilo botón para enlaces con clase .no-boton */
+/* ■ OVERRIDE para todos los enlaces de smartfenix */
 a.no-boton {
-  display: inline;          /* volver a texto en línea */
-  padding: 0;               /* sin relleno */
-  border: none;             /* sin borde */
-  border-radius: 0;         /* sin radio */
-  background: none;         /* sin fondo */
-  font-weight: normal;      /* peso normal */
-  text-decoration: underline; /* subrayado por defecto */
-  color: inherit;           /* hereda color del texto circundante */
-  transition: none;         /* sin transición hover */
+  display: inline !important;
+  padding: 0 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  background: none !important;
+  font-weight: normal !important;
+  text-decoration: underline !important;
+  color: inherit !important;
+  transition: none !important;
 }
 a.no-boton:hover {
-  /* si quieres un hover sencillo: */
-  color: #3399ff;
-  text-decoration: underline;
+  color: #3399ff !important;
+  text-decoration: underline !important;
 }
+
 
 /* *********************/
 /* seccion S O B R E  M I */
