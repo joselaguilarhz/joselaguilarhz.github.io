@@ -23,7 +23,9 @@ function responsiveMenu() {
         x.className = "";
     }
 }
-
+  (function(){
+    emailjs.init("y4fY_65hSZZUKBWwc");
+  })();
 function sendEmail(event) {
     event.preventDefault(); // Evita el envío tradicional del formulario
 
