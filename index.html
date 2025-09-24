@@ -5,16 +5,51 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+
+  <!-- Título y SEO -->
+  <title>José Luis Aguilar — Desarrollador FullStack e IoT</title>
+  <meta name="description" content="Desarrollador Full-Stack e IoT. Experiencia en Python, Java, React/Angular, SQL e integración de sensórica y dashboards para Smart Agro.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="José Luis Aguilar — Desarrollador FullStack e IoT">
+  <meta property="og:description" content="Back y front con Python/Java + React/Angular, IoT y dashboards.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://joselaguilarhz.github.io/">
+  <meta property="og:image" content="assets/og-image.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/favicon.ico">
+
+  <!-- Iconos / estilos -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="estilo.css">
-  <title>Desarrollador FullStack</title>
+
+  <!-- EmailJS -->
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <script>
     (function () {
       emailjs.init("tzEh-ML_u3OCN2vaL");
     })();
+  </script>
+
+  <!-- Datos estructurados (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "José Luis Aguilar",
+    "jobTitle": "Desarrollador Full-Stack",
+    "url": "https://joselaguilarhz.github.io/",
+    "email": "mailto:joselaguilarhz@gmail.com",
+    "knowsAbout": ["Python","Java","React","Angular","SQL","IoT","LoRaWAN","Grafana","InfluxDB","Docker","Nginx"],
+    "alumniOf": [
+      {"@type": "CollegeOrUniversity", "name": "IES Antonio Gala"},
+      {"@type": "HighSchool", "name": "Colegio Salesiano San Luis Rey"}
+    ],
+    "worksFor": {"@type": "Organization", "name": "Smart Fénix"}
+  }
   </script>
 </head>
 
@@ -30,35 +65,46 @@
             <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
             <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MÍ</a></li>
             <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
-        <!--    <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>-->
+            <!-- <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li> -->
             <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+            <!-- Botón CV en navbar -->
+            <li><a href="assets/CV-JOSE-LUIS.pdf" class="btn-cv" target="_blank" rel="noopener">Descargar CV</a></li>
           </ul>
         </nav>
 
         <!-- Icono del menu responsive -->
         <div id="icono-nav" onclick="responsiveMenu()">
-          <i class="fa-solid fa-bars"></i>  
+          <i class="fa-solid fa-bars"></i>
         </div>
-
 
         <div class="redes">
           <a href="https://github.com/joselaguilarhz"><i class="fa-brands fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/jose-luis-aguilar-sanchez-8a4270248/"><i
-                  class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.linkedin.com/in/jose-luis-aguilar-sanchez-8a4270248/"><i class="fa-brands fa-linkedin"></i></a>
         </div>
       </div>
     </header>
+
     <div class="presentacion">
       <p class="bienvenida">Bienvenidos</p>
-      <h2>Soy José Luis Aguilar, Programador FullStack</h2>
-      <p class="descripcion">Soy Jose Luis, te invito a conocerme a través de mi carrera profesional</p>
+      <h2>Soy José Luis Aguilar, Desarrollador Full-Stack e IoT</h2>
+      <p class="descripcion">Soy Jose Luis. Te invito a conocerme a través de mi carrera profesional y mis proyectos.</p>
 
-      <p class="descripcion">Estoy en proceso de desarrollo profesional en el mundo del desarrollo informático. 
-        Tengo experiencia previa en el mundo laboral en el sector de la industría ya que he sido programador de PLC's.</p>
+      <p class="descripcion">
+        Vengo del mundo industrial como <b>programador de PLC</b> y técnico automatista.
+        Actualmente lidero el proyecto <b>SMART AGRO</b> en
+        <a href="https://www.smartfenix.es/" class="no-boton"><b>Smart Fénix</b></a>,
+        integrando <b>sensórica IoT</b>, despliegue de <b>servidores</b> y visualización de datos.
+      </p>
 
-      <p class="descripcion">Actualmente me estoy desarrollando profesionalmente cómo líder del proyecto <b>SMART AGRO</b> de<a href="https://www.smartfenix.es/"class="no-boton">Smart Fénix</a></p>
+      <p class="descripcion">
+        Trabajo a diario con <b>Python</b> y <b>Java</b> en backend, <b>React</b>/<b>Angular</b> en frontend,
+        bases de datos <b>SQL</b> y stacks de observabilidad (<b>InfluxDB</b> + <b>Grafana</b>).
+      </p>
 
-      <a href="#portfolio">Ir a Proyectos</a>
+      <div class="cta-group">
+        <a href="#servicios">Ver servicios</a>
+        <a href="assets/CV-JOSE-LUIS.pdf" target="_blank" rel="noopener" class="cta-secundaria">Descargar CV</a>
+      </div>
     </div>
   </div>
 </section>
@@ -66,40 +112,37 @@
 <!-- SECCION S O B R E M I -->
 <section id="sobremi">
   <div class="contenedor-foto">
-    <img src="img/foto.jpeg" alt="">
+    <img src="img/foto.jpeg" alt="Foto de José Luis Aguilar">
   </div>
   <div class="sobremi">
     <p class="titulo-seccion">Sobre Mí</p>
-    <h2>Hola, Soy <span>José Luis Aguilar</span> </h2>
-    <h3>Programador FullStack</h3>
-    <p>Actualmente he terminado mis estudios, y al finalizar mis prácticas han apostado por mi en la empresa dónde las he realizado
-      <a href="https://www.smartfenix.es/" class="no-boton"><b> SMART FÉNIX</b></a>
-     Actualmente trabajo cómo lider de proyectos. Los proyectos que llevamos a cabo son dentro del área <b>SMART AGRO</b></p>
-    
-     <p>Las aptitudes en las que destaco son la <b>actitud proactiva, capacidad de comunicación y resolución de problemas.</b></p>
-     
-     <p>Dentro de <b>SMART AGRO</b> llevamos a cabo proyectos de <b>sensorización y digitalización agrícola.</b> </p>
+    <h2>Hola, Soy <span>José Luis Aguilar</span></h2>
+    <h3>Desarrollador Full-Stack e IoT</h3>
 
-     <p>Además he formado parte activa dentro del <b>Proyecto INSIGNIA</b>, una iniciativa que busca implementar tecnología inteligente,
-       interoperable y sostenible en la gestión del riego en las comunidades de regantes.</p>
-    
-       <p>También he ayudado en el desarrollo del proyecto <b>RIGACORE</b> que se trata de un proyecto de investigación
-       que trata de optimizar el diseño y la implantación de modelos predictivos y autónomos de gestión de recursos, 
-      mediante la digitalización del sistema de regadío y de gestión energética. </p>
+    <p>
+      Actualmente formo parte de <a href="https://www.smartfenix.es/" class="no-boton"><b>Smart Fénix</b></a> como
+      <b>líder de proyectos SMART AGRO</b>. Desarrollamos soluciones de <b>sensorización y digitalización agrícola</b>,
+      desde el campo hasta el dashboard, pasando por gateways, servidores y APIs.
+    </p>
 
-      <p>Previamente he estado trabajando gracias a ser también <b>Técnico de Automatización y Robótica Industrial</b>,
-      mi función era ser programador de PLC's y técnico automatista. He trabajado en plantas importantes como <b> Cosentino y Valeo</b>.</p>
+    <p>
+      He contribuido en iniciativas como el <b>Proyecto INSIGNIA</b> (riego inteligente e interoperable en comunidades de regantes)
+      y en el proyecto <b>RIGACORE</b> (modelos predictivos y autónomos de gestión de recursos y energía).
+    </p>
 
-      <p>En este sector estuve en <b>Auringis Automatismos</b> (Martos, Jaén) dónde me encargué de la programación y montaje de cuadros eléctricos 
-      y líneas automáticas en su mayoría para <b>Valeo</b> tanto en Martos, Marruecos y Polonia.</p>
+    <p>
+      Procedo del ámbito industrial como <b>Técnico de Automatización y Robótica</b>, con experiencia en
+      <b>programación de PLC</b> y montaje eléctrico para plantas como <b>Cosentino</b> y <b>Valeo</b> (Martos, Marruecos, Polonia).
+      He trabajado en <b>Auringis Automatismos</b> y <b>Automatismos Brenton</b>. También compaginé estudios y hostelería en <b>Grupo MVP</b>.
+    </p>
 
-      <p>También estuve en <b>Automatismos Brenton</b> (Córdoba) donde fuí programador de PLC, técnico automatista y coordinador de grupos de trabajo para <b>Cosentino</b>.</p>
- 
-      <p>Estoy orgulloso de poder decir que mientras estudiaba para convertirme en desarrollador he trabajado en la hostelería para <b>Grupo MVP</b>.</p>
-    
-    <a
-            href="https://www.canva.com/design/DAGZEOsUqSs/bwxu1GOSCEMaAfWXhg9g0Q/view?utm_content=DAGZEOsUqSs&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h7e27c45ce9">Descargar
-      CV</a>
+    <p>
+      Destaco por <b>actitud proactiva</b>, <b>comunicación</b> y <b>resolución de problemas</b>. Inglés <b>avanzado</b>,
+      <b>carné y vehículo propio</b>, y <b>disponibilidad total</b>.
+    </p>
+
+    <!-- Enlace a CV local en lugar de Canva -->
+    <a href="assets/CV-JOSE-LUIS.pdf" target="_blank" rel="noopener">Descargar CV</a>
   </div>
 </section>
 
@@ -108,172 +151,86 @@
   <h3 class="titulo-seccion">MIS SERVICIOS</h3>
   <div class="fila">
     <div class="servicio">
-      <span class="icono"> <i class="fa-brands fa-java"></i></span>
-      <h4>Lenguaje JAVA</h4>
+      <span class="icono"><i class="fa-solid fa-server"></i></span>
+      <h4>Backend (Python / Java)</h4>
       <hr>
       <ul class="servicios-tag">
-        <li>Backend</li>
-        <li>Interfaces</li>
+        <li>API</li>
+        <li>Microservicios</li>
         <li>BBDD</li>
       </ul>
-      <p>Especializado en desarrollo backend con Java, integración con bases de datos, microservicios con
-        Spring, hilos etc..</p>
+      <p>APIs y servicios con <b>Python</b> (Flask/FastAPI) y <b>Java</b> (Spring). Autenticación, ORM, tests e integración con SQL/InfluxDB.</p>
     </div>
-    <div class="servicio">
-      <span class="icono"><i class="fa-brands fa-android"></i></span>
-      <h4>Android</h4>
-      <hr>
-      <ul class="servicios-tag">
-        <li>Backend</li>
-        <li>Android</li>
-        <li>Animación</li>
 
-      </ul>
-      <p>Experiencia en desarrollo de aplicaciones móviles con Kotlin y Java, incluyendo animaciones y gestión
-        de datos.</p>
-    </div>
     <div class="servicio">
-      <span class="icono"><i class="fa-brands fa-angular"></i></span>
-      <h4>SpringBoot, Angular</h4>
+      <span class="icono"><i class="fa-brands fa-react"></i></span>
+      <h4>Frontend (React / Angular)</h4>
       <hr>
       <ul class="servicios-tag">
-        <li>FullStack</li>
+        <li>UI</li>
+        <li>UX</li>
+        <li>Rendimiento</li>
       </ul>
-      <p>Desarrollo de aplicaciones web FullStack con Spring Boot para backend y Angular para frontend,
-        optimizando rendimiento y escalabilidad.</p>
+      <p>Apps web con <b>React</b> y <b>Angular</b>, componentes reutilizables, estados globales y consumo de APIs. Animaciones y SPA.</p>
+    </div>
+
+    <div class="servicio">
+      <span class="icono"><i class="fa-solid fa-microchip"></i></span>
+      <h4>IoT & Smart Agro</h4>
+      <hr>
+      <ul class="servicios-tag">
+        <li>LoRaWAN</li>
+        <li>RS485/SDI-12</li>
+        <li>Dashboards</li>
+      </ul>
+      <p>Integración de sensórica (campo-nube), gateways, protocolos industriales y visualización con <b>InfluxDB</b> y <b>Grafana</b>.</p>
     </div>
   </div>
+
   <div class="fila">
     <div class="servicio">
       <span class="icono"><i class="fa-solid fa-database"></i></span>
-      <h4>Base de datos</h4>
+      <h4>Bases de datos & Datos</h4>
       <hr>
       <ul class="servicios-tag">
-        <li>Backend</li>
-        <li>BBDD</li>
-        <li>Persistencia</li>
+        <li>SQL</li>
+        <li>InfluxDB</li>
+        <li>ETL</li>
       </ul>
-      <p>Gestión e integración de bases de datos como MySQL, Oracle SQL y PL/SQL, incluyendo conexiones desde
-        Java y optimización de consultas.</p>
+      <p>Modelado, consultas y optimización en <b>MySQL</b>/SQL. Series temporales con <b>InfluxDB</b>, pipelines y APIs de datos.</p>
     </div>
-    <div class="servicio">
-      <span class="icono"><i class="fa-brands fa-html5"></i></span>
-      <h4>Programador Web</h4>
-      <hr>
-      <ul class="servicios-tag">
-        <li>Frontend</li>
-        <li>Web</li>
-        <li>Graphic</li>
-      </ul>
-      <p>Desarrollo de sitios y aplicaciones web con HTML, CSS, JavaScript, PHP y XML, utilizando frameworks
-        como Laravel para backend.</p>
-    </div>
-    <div class="servicio">
-      <span class="icono"><i class="fa-solid fa-person-circle-question"></i></span>
-      <h4>Otros</h4>
-      <hr>
-      <ul class="servicios-tag">
-        <li>Frontend</li>
-        <li>Backend</li>
 
+    <div class="servicio">
+      <span class="icono"><i class="fa-brands fa-docker"></i></span>
+      <h4>Dev & Ops</h4>
+      <hr>
+      <ul class="servicios-tag">
+        <li>Docker</li>
+        <li>Nginx</li>
+        <li>Linux</li>
       </ul>
-      <p>En constante aprendizaje de nuevas tecnologías, incluyendo Python, C# y frameworks como Laravel,
-        Spring y Angular.</p>
+      <p>Despliegues en <b>Docker</b>, proxys <b>Nginx</b>, automatización en <b>Linux</b> y publicación en GitHub Pages.</p>
+    </div>
+
+    <div class="servicio">
+      <span class="icono"><i class="fa-solid fa-graduation-cap"></i></span>
+      <h4>Formación & Soporte</h4>
+      <hr>
+      <ul class="servicios-tag">
+        <li>Mentoría</li>
+        <li>Docs</li>
+        <li>Soporte</li>
+      </ul>
+      <p>Documentación técnica, formación de equipos y puesta en marcha de soluciones IoT/Full-Stack.</p>
     </div>
   </div>
 </section>
 
-<!-- SECCION PORTAFOLIO 
+<!-- SECCION PORTAFOLIO (opcional, la dejas comentada si no quieres mostrarla)
 <section id="portfolio">
-  <h3 class="titulo-seccion">Mis Proyectos</h3>
-  <div class="fila">
-    <div class="proyecto">
-      <div class="overlay"></div>
-      <a href="https://github.com/JuanCarlos92/SpringBoot-MicroServicios-AgenciaViajes.git">
-        <img src="img/AgenciaViajesSpring.png" alt=""></a>
-      <div class="info">
-        <h4>Agencia Viajes Spring Microservicios</h4>
-        <p>Spring, Angular</p>
-      </div>
-    </div>
-    <div class="proyecto">
-      <div class="overlay"></div>
-      <a href="https://github.com/JuanCarlos92/AndroidJuego2D.git">
-        <img src="img/BirdWars.png" alt=""></a>
-      <div class="info">
-        <h4>Juego 2D Android</h4>
-        <p>Android Java</p>
-      </div>
-    </div>
-    <div class="proyecto">
-      <div class="overlay"></div>
-      <a href="https://github.com/JuanCarlos92/ProyectoFinalCJ_TresEnRayas.git">
-        <img src="img/diplomaCimientoJava.png" alt=""></a>
-      <div class="info">
-        <h4>Proyecto Final Certificado C.Java</h4>
-        <p>Backend</p>
-      </div>
-    </div>
-  </div>
-  <div class="fila">
-    <div class="proyecto">
-      <div class="overlay"></div>
-      <a href="https://github.com/JuanCarlos92/ProyectADD_U1_GestorLibrosXML.git">
-        <img src="img/MenuGestorlibrosXML.png" alt=""></a>
-      <div class="info">
-        <h4>Proyecto Acceso a Datos 2ºDAM</h4>
-        <p>java JAXB</p>
-      </div>
-    </div>
-    <div class="proyecto">
-      <div class="overlay"></div>
-      <a href="https://github.com/JuanCarlos92/ProyectADD_U2_MySQL_JAVA.git">
-        <img src="img/ProyectAdd_U2.png" alt=""></a>
-      <div class="info">
-        <h4>Proyecto Acceso a Datos 2ªDAM</h4>
-        <p>Java JDBC</p>
-      </div>
-    </div>
-    <div class="proyecto">
-      <div class="overlay"></div>
-      <a href="https://github.com/JuanCarlos92/KotlinComposeT1_AppListaCompraMejorada.git">
-        <img src="img/kotlinListaCompra.png" alt=""></a>>
-      <div class="info">
-        <h4>App Kotlin Compose</h4>
-        <p>Kotlin</p>
-      </div>
-    </div>
-  </div>
-  <div class="fila">
-    <div class="proyecto">
-      <div class="overlay"></div>
-      <a href="https://github.com/JuanCarlos92/TFG.git">
-        <img src="img/monsterhunter.jpg" alt=""></a>
-      <div class="info">
-        <h4>SpringBoot con angular e ionic</h4>
-        <p>TFG</p>
-      </div>
-    </div>
-    <div class="proyecto">
-      <div class="overlay"></div>
-      <a href="https://github.com/JuanCarlos92/Hibernate.git">
-        <img src="img/Hibernate.png" alt=""></a>
-      <div class="info">
-        <h4>CRUD Hibernate</h4>
-        <p>Hibernate, JPA</p>
-      </div>
-    </div>
-    <div class="proyecto">
-      <div class="overlay"></div>
-      <a href="https://github.com/JuanCarlos92/ChatSocket.git">
-        <img src="img/ChatSocket.png" alt=""></a>
-      <div class="info">
-        <h4>Chat con socket Cliente - Servidor</h4>
-        <p>Socket Java servidor y cliente Android</p>
-      </div>
-    </div>
-  </div>
-</section> -->
+  ...
+</section>
+-->
 
 <!-- SECCTION C O N T A C T O -->
 <section id="contacto">
@@ -281,15 +238,14 @@
   <div class="contenedor-form">
     <form id="contact-form" onsubmit="sendEmail(event)">
       <div class="fila mitad">
-        <input type="text" name="user_name" placeholder="Nombre Completo *" class="input-mitad">
-        <input type="email" name="user_email" placeholder="Dirección de Email" class="input-mitad">
+        <input type="text" name="user_name" placeholder="Nombre Completo *" class="input-mitad" required>
+        <input type="email" name="user_email" placeholder="Dirección de Email *" class="input-mitad" required>
       </div>
       <div class="fila">
         <input type="text" name="subject" placeholder="Tema..." class="input-full">
       </div>
       <div class="fila">
-                    <textarea name="message" id="" cols="30" rows="10" placeholder="Tu Mensaje..."
-                              class="input-full"></textarea>
+        <textarea name="message" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full" required></textarea>
       </div>
 
       <input type="submit" value="Enviar Mensaje" class="btn-enviar">
@@ -303,10 +259,8 @@
     <a href="https://github.com/joselaguilarhz"><i class="fa-brands fa-github"></i></a>
     <a href="https://www.linkedin.com/in/jose-luis-aguilar-sanchez-8a4270248/"><i class="fa-brands fa-linkedin"></i></a>
   </div>
-
 </footer>
 
 <script src="script.js"></script>
 </body>
-
 </html>
