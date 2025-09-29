@@ -23,7 +23,7 @@ const Header = () => {
             <li><a href="#contacto" className="text-gray-300 hover:text-blue-400 transition-colors">CONTACTO</a></li>
             <li>
               <a 
-                href="/assets/CV-JOSE-LUIS.pdf" 
+                href="/assets/docs/CV JOSE LUIS.pdf" 
                 className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-400 transition-colors"
                 target="_blank" 
                 rel="noopener"
@@ -63,11 +63,12 @@ const Header = () => {
         </div>
 
         {/* Mobile Navigation */}
-        <div 
-          className={`fixed inset-0 bg-gray-900/98 md:hidden transition-opacity duration-300 ${
-            isMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
-          }`}
-        >
+          <div 
+            className={`fixed inset-0 bg-gray-900 md:hidden transition-opacity duration-300 ${
+              isMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
+               }`}
+          >
+
           <nav className="h-full flex items-center justify-center">
             <ul className="space-y-8 text-center" onClick={handleMenuClick}>
               <li><a href="#inicio" className="text-gray-300 text-2xl hover:text-blue-400 transition-colors">INICIO</a></li>
