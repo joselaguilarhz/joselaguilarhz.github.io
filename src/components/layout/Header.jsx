@@ -34,10 +34,10 @@ const Header = () => {
           </ul>
         </nav>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Menu Button (Hamburger) */}
         <button 
           className="md:hidden text-gray-300 hover:text-blue-400 transition-colors"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          onClick={() => setIsMenuOpen(true)}
         >
           <i className="fa-solid fa-bars text-2xl"></i>
         </button>
@@ -69,6 +69,14 @@ const Header = () => {
           isMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
         }`}
       >
+        {/* Botón de cierre (X) */}
+        <button 
+          className="absolute top-5 right-6 text-gray-300 hover:text-blue-400 transition-colors"
+          onClick={() => setIsMenuOpen(false)}
+        >
+          <i className="fa-solid fa-xmark text-3xl"></i>
+        </button>
+
         <nav className="h-full flex items-center justify-center">
           <ul className="space-y-8 text-center" onClick={handleMenuClick}>
             <li><a href="#inicio" className="text-gray-100 text-2xl hover:text-blue-400 transition-colors">INICIO</a></li>
