@@ -1,0 +1,149 @@
+---
+import "../styles/global.css";
+import logo from "../assets/logo jl.png";
+import MouseGradient from "../components/ui/MouseGradient";
+import ScrollProgress from "../components/ui/ScrollProgress";
+import NoiseOverlay from "../components/ui/NoiseOverlay.astro";
+---
+
+<!doctype html>
+<html lang="es" data-lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <title>Jose Luis - Full-Stack</title>
+    <meta
+      name="description"
+      content="Portfolio dark premium con enfoque en producto, ingenieria y narrativa visual."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400,500,600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="min-h-screen antialiased">
+    <ScrollProgress client:load />
+    <MouseGradient client:load />
+    <NoiseOverlay />
+
+    <header
+      class="fixed top-0 left-0 right-0 z-30 opacity-0 -translate-y-2 pointer-events-none transition duration-500 ease-out"
+      data-nav
+    >
+      <div class="mx-auto max-w-6xl px-6">
+        <div class="mt-5 rounded-2xl border border-white/10 bg-black/40 backdrop-blur">
+          <nav class="flex items-center justify-between px-4 py-3 md:px-6">
+            <a href="#top" class="flex items-center gap-3 text-sm font-semibold tracking-[0.2em]">
+              <img src={logo.src} alt="Logo Jose Luis" class="h-7 w-7 rounded-full" />
+              <span>JOSE LUIS</span>
+            </a>
+
+            <div class="hidden items-center gap-6 text-xs uppercase tracking-[0.25em] text-zinc-400 md:flex">
+              <a href="#about" class="transition hover:text-white">
+                <span data-lang="es">Sobre</span>
+                <span data-lang="en">About</span>
+              </a>
+              <a href="#skills" class="transition hover:text-white">
+                <span data-lang="es">Stack</span>
+                <span data-lang="en">Skills</span>
+              </a>
+              <a href="#work" class="transition hover:text-white">
+                <span data-lang="es">Trabajo</span>
+                <span data-lang="en">Work</span>
+              </a>
+              <a href="#contact" class="transition hover:text-white">
+                <span data-lang="es">Contacto</span>
+                <span data-lang="en">Contact</span>
+              </a>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <div class="hidden items-center gap-2 rounded-full border border-white/10 bg-white/5 p-1 text-[11px] uppercase tracking-[0.2em] text-zinc-400 md:flex">
+                <button
+                  type="button"
+                  class="rounded-full px-3 py-1 transition hover:text-white"
+                  data-lang-switch="es"
+                >
+                  ES
+                </button>
+                <button
+                  type="button"
+                  class="rounded-full px-3 py-1 transition hover:text-white"
+                  data-lang-switch="en"
+                >
+                  EN
+                </button>
+              </div>
+              <a
+                href="#contact"
+                class="rounded-xl border border-white/15 bg-white/10 px-3 py-2 text-xs text-zinc-200 transition hover:bg-white/20"
+              >
+                <span data-lang="es">Hablemos</span>
+                <span data-lang="en">Let's talk</span>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main id="top" class="mx-auto max-w-6xl px-6 pt-32 md:pt-36">
+      <slot />
+    </main>
+
+    <footer class="mx-auto max-w-6xl px-6 pb-12 pt-16 text-xs text-zinc-500">
+      <div class="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
+        <span>© {new Date().getFullYear()} Jose Luis</span>
+        <span>
+          <span data-lang="es">Hecho en Espa&ntilde;a - Disponible remoto</span>
+          <span data-lang="en">Based in Spain - Remote friendly</span>
+        </span>
+      </div>
+    </footer>
+
+    <script is:inline>
+      (() => {
+        const supported = ["es", "en"];
+        const stored = localStorage.getItem("lang");
+        const browser = navigator.language ? navigator.language.slice(0, 2) : "en";
+        const lang = supported.includes(stored)
+          ? stored
+          : supported.includes(browser)
+            ? browser
+            : "en";
+        const setLang = (value) => {
+          if (!supported.includes(value)) return;
+          localStorage.setItem("lang", value);
+          document.documentElement.setAttribute("data-lang", value);
+          document.documentElement.setAttribute("lang", value);
+        };
+        setLang(lang);
+        document.querySelectorAll("[data-lang-switch]").forEach((button) => {
+          button.addEventListener("click", () => {
+            setLang(button.getAttribute("data-lang-switch"));
+          });
+        });
+
+        const nav = document.querySelector("[data-nav]");
+        const hero = document.querySelector("main > section");
+        if (!nav || !hero) return;
+        const updateNav = () => {
+          const threshold = hero.offsetTop + hero.offsetHeight - 24;
+          if (window.scrollY >= threshold) {
+            nav.classList.add("opacity-100", "translate-y-0", "pointer-events-auto");
+            nav.classList.remove("opacity-0", "-translate-y-2", "pointer-events-none");
+          } else {
+            nav.classList.add("opacity-0", "-translate-y-2", "pointer-events-none");
+            nav.classList.remove("opacity-100", "translate-y-0", "pointer-events-auto");
+          }
+        };
+        updateNav();
+        window.addEventListener("scroll", updateNav, { passive: true });
+      })();
+    </script>
+  </body>
+</html>

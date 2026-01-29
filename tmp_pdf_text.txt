@@ -1,0 +1,86 @@
+Bienvenidos
+Soy José Luis Aguilar, Desarrollador Full-
+Stack e IoT
+Te invito a conocerme a través de mi carrera profesional y mis proyectos.
+/José Luis/ 
+29/1/26, 9:02 José Luis Aguilar — Desarrollador FullStack e IoT
+https://joselaguilarhz.github.io 1/6
+Vengo del mundo industrial como programador de PLC y técnico automatista.
+Actualmente lidero el proyecto SMART AGRO enSmart Fénix, integrando sensórica
+IoT, despliegue de servidores y visualización de datos.
+Trabajo a diario con Python y Java en backend,React/Angular en frontend, bases de
+datos SQL y stacks de observabilidad (InfluxDB + Grafana).
+Ver servicios Descargar CV
+/José Luis/
+29/1/26, 9:02 José Luis Aguilar — Desarrollador FullStack e IoT
+https://joselaguilarhz.github.io 2/6
+Sobre Mí
+Hola, Soy José Luis Aguilar
+Desarrollador Full-Stack e IoT
+Actualmente formo parte deSmart Fénixcomo líder de proyectos SMART AGRO. Me encargo
+del desarrolllo de soluciones para la sensorización y digitalización agrícola, desde la compra de
+sensores hablando con proveedores de todo el mundo hasta la digitalización y visualización de
+los valores en una plataforma propia desarrollada por mí en la que me he encargado del
+backend y frontend.
+He contribuido en iniciativas como el Proyecto INSIGNIA (riego inteligente e interoperable en
+comunidades de regantes) y en el proyecto RIGACORE (modelos predictivos y autónomos de
+gestión de recursos y energía).
+Procedo del ámbito industrial como Técnico de Automatización y Robótica, con experiencia en
+programación de PLC y montaje eléctrico para empresas como Cosentino y Valeo en sus sedes
+de Martos, Marruecos y Polonia.
+He trabajado en Auringis Automatismos en Martos y Automatismos Brenton. También he
+estado compaginando mis estudios y la hostelería en Grupo MVP durante año y medio.
+Destaco por mi actitud proactiva, comunicación y resolución de problemas. Inglés avanzado,
+carné y vehículo propio, y disponibilidad total.
+Descargar CV
+MIS SERVICIOS
+
+Backend (Python / Java)
+/José Luis/
+29/1/26, 9:02 José Luis Aguilar — Desarrollador FullStack e IoT
+https://joselaguilarhz.github.io 3/6
+API Microservicios BBDD
+APIs y servicios con Python (Flask/FastAPI) y Java (Spring). Autenticación, ORM, tests e
+integración con SQL/InfluxDB.
+
+Frontend (React / Angular)
+UI UX Rendimiento
+Apps web con React y Angular, componentes reutilizables, desarrollo en Android, estados
+globales y consumo de APIs. Animaciones y SPA.
+
+IoT & Smart Agro
+LoRaWAN Sensorización Dashboards
+Integración de sensórica (campo-nube), gateways, protocolos industriales y visualización
+con InfluxDB y Grafana.
+
+Bases de datos & Datos
+SQL InfluxDB ETL
+Modelado, consultas y optimización en MySQL/SQL. Series temporales con InfluxDB,
+pipelines y APIs de datos.
+/José Luis/
+29/1/26, 9:02 José Luis Aguilar — Desarrollador FullStack e IoT
+https://joselaguilarhz.github.io 4/6
+
+Dev & Ops
+Docker GitHub Linux
+Despliegues en Docker, control de versiones en GitHub, proxys Nginx, automatización en
+Linux.
+
+Formación & Soporte
+Mentoría Docs Soporte
+Documentación técnica, formación de equipos y puesta en marcha de soluciones IoT/Full-
+Stack.
+Contacto
+Nombre Completo *
+Dirección de Email *
+Tema...
+/José Luis/
+29/1/26, 9:02 José Luis Aguilar — Desarrollador FullStack e IoT
+https://joselaguilarhz.github.io 5/6
+Tu Mensaje...
+Enviar Mensaje
+ 
+© 2026 José Luis Aguilar. Todos los derechos reservados.
+/José Luis/
+29/1/26, 9:02 José Luis Aguilar — Desarrollador FullStack e IoT
+https://joselaguilarhz.github.io 6/6

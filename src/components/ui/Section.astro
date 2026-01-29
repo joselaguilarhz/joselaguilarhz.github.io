@@ -1,0 +1,31 @@
+---
+import AnimatedInView from "./AnimatedInView";
+
+const { id, number, titleEs, titleEn, subtitleEs, subtitleEn } = Astro.props;
+---
+
+<section id={id} class="border-t border-white/10 py-16 md:py-20 scroll-mt-28">
+  <AnimatedInView client:visible>
+    <div class="grid gap-8 md:grid-cols-12">
+      <div class="md:col-span-4">
+        <p class="text-xs uppercase tracking-[0.3em] text-zinc-500">{number}</p>
+        <h2 class="mt-4 text-3xl font-display text-zinc-100 md:text-4xl">
+          <span data-lang="es">{titleEs}</span>
+          <span data-lang="en">{titleEn}</span>
+        </h2>
+        {(subtitleEs || subtitleEn) && (
+          <p class="mt-4 text-sm text-zinc-400">
+            {subtitleEs && <span data-lang="es">{subtitleEs}</span>}
+            {subtitleEn && <span data-lang="en">{subtitleEn}</span>}
+          </p>
+        )}
+      </div>
+
+      <div class="md:col-span-8">
+        <div class="space-y-6">
+          <slot />
+        </div>
+      </div>
+    </div>
+  </AnimatedInView>
+</section>

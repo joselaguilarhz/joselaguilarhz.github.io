@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  --bg: #07090f;
+  --bg-2: #0b0f1a;
+  --text: #e6e6ea;
+  --muted: #a1a1aa;
+  --line: rgba(255, 255, 255, 0.08);
+  --accent-1: #60a5fa;
+  --accent-2: #a78bfa;
+  --accent-3: #34d399;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg);
+}
+
+body {
+  min-height: 100%;
+  color: var(--text);
+  font-family: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  background:
+    radial-gradient(900px 500px at 15% -10%, rgba(96, 165, 250, 0.20), transparent 60%),
+    radial-gradient(800px 500px at 85% 0%, rgba(167, 139, 250, 0.18), transparent 55%),
+    radial-gradient(700px 400px at 60% 85%, rgba(52, 211, 153, 0.12), transparent 60%),
+    linear-gradient(180deg, var(--bg), var(--bg-2));
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: "Newsreader", ui-serif, Georgia, serif;
+  letter-spacing: -0.015em;
+}
+
+p {
+  line-height: 1.7;
+}
+
+[data-lang="es"] [data-lang="en"],
+[data-lang="en"] [data-lang="es"] {
+  display: none;
+}
+
+::selection {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.03);
+}

@@ -1,0 +1,343 @@
+---
+const placeholders = [
+  "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='675'><defs><linearGradient id='g' x1='0' x2='1'><stop offset='0%' stop-color='%230ea5e9'/><stop offset='100%' stop-color='%2322c55e'/></linearGradient></defs><rect width='1200' height='675' fill='url(%23g)'/><text x='50%' y='50%' fill='white' font-family='Space Grotesk, Arial' font-size='48' text-anchor='middle' dominant-baseline='middle'>Placeholder 01</text></svg>",
+  "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='675'><defs><linearGradient id='g' x1='0' x2='1'><stop offset='0%' stop-color='%2360a5fa'/><stop offset='100%' stop-color='%23a78bfa'/></linearGradient></defs><rect width='1200' height='675' fill='url(%23g)'/><text x='50%' y='50%' fill='white' font-family='Space Grotesk, Arial' font-size='48' text-anchor='middle' dominant-baseline='middle'>Placeholder 02</text></svg>",
+  "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='675'><defs><linearGradient id='g' x1='0' x2='1'><stop offset='0%' stop-color='%23f97316'/><stop offset='100%' stop-color='%23e11d48'/></linearGradient></defs><rect width='1200' height='675' fill='url(%23g)'/><text x='50%' y='50%' fill='white' font-family='Space Grotesk, Arial' font-size='48' text-anchor='middle' dominant-baseline='middle'>Placeholder 03</text></svg>",
+];
+---
+
+<section id="about" class="border-t border-white/10 py-16 md:py-24 scroll-mt-28">
+  <div class="mx-auto max-w-6xl px-6">
+    <div class="mb-8 md:mb-12">
+      <p class="text-xs uppercase tracking-[0.3em] text-zinc-500">01</p>
+      <h2 class="mt-4 text-3xl font-display text-white md:text-4xl">De la industria al software.</h2>
+      <p class="mt-3 text-sm text-zinc-400 md:text-base">
+        <span data-lang="es">Una trayectoria con base tecnica y entrega real.</span>
+        <span data-lang="en">A trajectory built on technical depth and real delivery.</span>
+      </p>
+    </div>
+
+    <div class="sticky top-24 z-10 mb-8">
+      <div class="flex items-center gap-3 text-[11px] uppercase tracking-[0.25em] text-zinc-500">
+        <span data-lang="es">Progreso</span>
+        <span data-lang="en">Progress</span>
+      </div>
+      <div class="mt-3 flex items-center gap-3" data-about-dots>
+        <button type="button" class="h-2 w-8 rounded-full bg-white/20 transition" data-about-dot="0"></button>
+        <button type="button" class="h-2 w-8 rounded-full bg-white/20 transition" data-about-dot="1"></button>
+        <button type="button" class="h-2 w-8 rounded-full bg-white/20 transition" data-about-dot="2"></button>
+      </div>
+    </div>
+
+    <div class="space-y-10 scroll-smooth md:snap-y md:snap-mandatory">
+      <article
+        class="about-step rounded-3xl border border-white/10 bg-white/4 p-8 md:p-10 md:snap-start transition-all duration-500 ease-out opacity-60 translate-y-6"
+        data-about-step="0"
+      >
+        <div class="grid gap-8 md:grid-cols-[1.1fr_0.9fr] md:items-start">
+          <div>
+              <h3 class="text-2xl font-semibold text-white md:text-3xl" data-lang="es">Origen industrial</h3>
+              <h3 class="text-2xl font-semibold text-white md:text-3xl" data-lang="en">Industrial roots</h3>
+              <p class="mt-4 text-base text-zinc-300 md:text-lg" data-lang="es">
+                Tecnico en automatizacion y programacion de PLC. Montaje electrico y puesta en marcha
+                en Cosentino y Valeo (Martos, Marruecos, Polonia).
+              </p>
+              <p class="mt-4 text-base text-zinc-300 md:text-lg" data-lang="en">
+                Automation technician and PLC programming. Electrical assembly and launches for
+                Cosentino and Valeo (Martos, Morocco, Poland).
+              </p>
+            <div class="mt-6 text-4xl font-display text-white/20">01</div>
+          </div>
+
+          <div class="relative md:justify-self-end md:w-[80%]">
+            <div class="overflow-hidden rounded-2xl border border-white/10 bg-black/30">
+              <div class="relative aspect-[4/3] md:aspect-[3/4]" data-about-carousel>
+                <img
+                  src={placeholders[0]}
+                  alt="Placeholder 01"
+                  class="about-slide absolute inset-0 h-full w-full object-cover object-[50%_35%] opacity-100 scale-100 transition duration-500"
+                  data-about-slide
+                />
+                <img
+                  src={placeholders[1]}
+                  alt="Placeholder 02"
+                  class="about-slide absolute inset-0 h-full w-full object-cover opacity-0 scale-105 transition duration-500"
+                  data-about-slide
+                />
+                <img
+                  src={placeholders[2]}
+                  alt="Placeholder 03"
+                  class="about-slide absolute inset-0 h-full w-full object-cover opacity-0 scale-105 transition duration-500"
+                  data-about-slide
+                />
+                <button
+                  type="button"
+                  class="about-prev absolute left-3 top-1/2 -translate-y-1/2 flex h-9 w-9 items-center justify-center rounded-full border border-white/20 bg-black/40 text-white transition hover:bg-black/60"
+                  aria-label="Anterior"
+                  data-about-prev
+                >
+                  &lt;
+                </button>
+                <button
+                  type="button"
+                  class="about-next absolute right-3 top-1/2 -translate-y-1/2 flex h-9 w-9 items-center justify-center rounded-full border border-white/20 bg-black/40 text-white transition hover:bg-black/60"
+                  aria-label="Siguiente"
+                  data-about-next
+                >
+                  &gt;
+                </button>
+                <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center gap-2" data-about-dots>
+                  <span class="h-2 w-2 rounded-full bg-white/30" data-about-carousel-dot="0"></span>
+                  <span class="h-2 w-2 rounded-full bg-white/30" data-about-carousel-dot="1"></span>
+                  <span class="h-2 w-2 rounded-full bg-white/30" data-about-carousel-dot="2"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article
+        class="about-step rounded-3xl border border-white/10 bg-white/4 p-8 md:p-10 md:snap-start transition-all duration-500 ease-out opacity-60 translate-y-6"
+        data-about-step="1"
+      >
+        <div class="grid gap-8 md:grid-cols-[1.1fr_0.9fr] md:items-start">
+          <div>
+              <h3 class="text-2xl font-semibold text-white md:text-3xl" data-lang="es">Experiencia en campo</h3>
+              <h3 class="text-2xl font-semibold text-white md:text-3xl" data-lang="en">Field experience</h3>
+              <p class="mt-4 text-base text-zinc-300 md:text-lg" data-lang="es">
+                Automatismos industriales en Auringis Automatismos y Automatismos Brenton.
+                Compagine estudios con hosteleria en Grupo MVP.
+              </p>
+              <p class="mt-4 text-base text-zinc-300 md:text-lg" data-lang="en">
+                Industrial automation at Auringis Automatismos and Automatismos Brenton.
+                Combined studies with hospitality at Grupo MVP.
+              </p>
+            <div class="mt-6 text-4xl font-display text-white/20">02</div>
+          </div>
+
+          <div class="relative md:justify-self-end md:w-[80%]">
+            <div class="overflow-hidden rounded-2xl border border-white/10 bg-black/30">
+              <div class="relative aspect-[4/3] md:aspect-[3/4]" data-about-carousel>
+                <img
+                  src={placeholders[0]}
+                  alt="Placeholder 01"
+                  class="about-slide absolute inset-0 h-full w-full object-cover opacity-100 scale-100 transition duration-500"
+                  data-about-slide
+                />
+                <img
+                  src={placeholders[1]}
+                  alt="Placeholder 02"
+                  class="about-slide absolute inset-0 h-full w-full object-cover opacity-0 scale-105 transition duration-500"
+                  data-about-slide
+                />
+                <img
+                  src={placeholders[2]}
+                  alt="Placeholder 03"
+                  class="about-slide absolute inset-0 h-full w-full object-cover opacity-0 scale-105 transition duration-500"
+                  data-about-slide
+                />
+                <button
+                  type="button"
+                  class="about-prev absolute left-3 top-1/2 -translate-y-1/2 flex h-9 w-9 items-center justify-center rounded-full border border-white/20 bg-black/40 text-white transition hover:bg-black/60"
+                  aria-label="Anterior"
+                  data-about-prev
+                >
+                  &lt;
+                </button>
+                <button
+                  type="button"
+                  class="about-next absolute right-3 top-1/2 -translate-y-1/2 flex h-9 w-9 items-center justify-center rounded-full border border-white/20 bg-black/40 text-white transition hover:bg-black/60"
+                  aria-label="Siguiente"
+                  data-about-next
+                >
+                  &gt;
+                </button>
+                <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center gap-2" data-about-dots>
+                  <span class="h-2 w-2 rounded-full bg-white/30" data-about-carousel-dot="0"></span>
+                  <span class="h-2 w-2 rounded-full bg-white/30" data-about-carousel-dot="1"></span>
+                  <span class="h-2 w-2 rounded-full bg-white/30" data-about-carousel-dot="2"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article
+        class="about-step rounded-3xl border border-white/10 bg-white/4 p-8 md:p-10 md:snap-start transition-all duration-500 ease-out opacity-60 translate-y-6"
+        data-about-step="2"
+      >
+        <div class="grid gap-8 md:grid-cols-[1.1fr_0.9fr] md:items-start">
+          <div>
+              <h3 class="text-2xl font-semibold text-white md:text-3xl" data-lang="es">Hoy lidero Smart Agro</h3>
+              <h3 class="text-2xl font-semibold text-white md:text-3xl" data-lang="en">Today I lead Smart Agro</h3>
+              <p class="mt-4 text-base text-zinc-300 md:text-lg" data-lang="es">
+                Lider de proyectos en Smart Fenix: sensorizacion IoT, despliegue de servidores y
+                visualizacion de datos. Participacion en INSIGNIA y RIGACORE.
+              </p>
+              <p class="mt-4 text-base text-zinc-300 md:text-lg" data-lang="en">
+                Project lead at Smart Fenix: IoT sensing, server deployments, and data visualization.
+                Participation in INSIGNIA and RIGACORE.
+              </p>
+            <div class="mt-6 text-4xl font-display text-white/20">03</div>
+          </div>
+
+          <div class="relative md:justify-self-end md:w-[80%]">
+            <div class="overflow-hidden rounded-2xl border border-white/10 bg-black/30">
+              <div class="relative aspect-[4/3] md:aspect-[3/4]" data-about-carousel>
+                <img
+                  src={placeholders[0]}
+                  alt="Placeholder 01"
+                  class="about-slide absolute inset-0 h-full w-full object-cover opacity-100 scale-100 transition duration-500"
+                  data-about-slide
+                />
+                <img
+                  src={placeholders[1]}
+                  alt="Placeholder 02"
+                  class="about-slide absolute inset-0 h-full w-full object-cover object-[50%_35%] opacity-0 scale-105 transition duration-500"
+                  data-about-slide
+                />
+                <img
+                  src={placeholders[2]}
+                  alt="Placeholder 03"
+                  class="about-slide absolute inset-0 h-full w-full object-cover opacity-0 scale-105 transition duration-500"
+                  data-about-slide
+                />
+                <button
+                  type="button"
+                  class="about-prev absolute left-3 top-1/2 -translate-y-1/2 flex h-9 w-9 items-center justify-center rounded-full border border-white/20 bg-black/40 text-white transition hover:bg-black/60"
+                  aria-label="Anterior"
+                  data-about-prev
+                >
+                  &lt;
+                </button>
+                <button
+                  type="button"
+                  class="about-next absolute right-3 top-1/2 -translate-y-1/2 flex h-9 w-9 items-center justify-center rounded-full border border-white/20 bg-black/40 text-white transition hover:bg-black/60"
+                  aria-label="Siguiente"
+                  data-about-next
+                >
+                  &gt;
+                </button>
+                <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center gap-2" data-about-dots>
+                  <span class="h-2 w-2 rounded-full bg-white/30" data-about-carousel-dot="0"></span>
+                  <span class="h-2 w-2 rounded-full bg-white/30" data-about-carousel-dot="1"></span>
+                  <span class="h-2 w-2 rounded-full bg-white/30" data-about-carousel-dot="2"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <script is:inline>
+    (() => {
+      const dots = Array.from(document.querySelectorAll("[data-about-dot]"));
+      const steps = Array.from(document.querySelectorAll("[data-about-step]"));
+      if (!dots.length || !steps.length) return;
+
+      const activate = (index) => {
+        dots.forEach((dot, i) => {
+          if (i === index) {
+            dot.classList.add("bg-white", "shadow-[0_0_12px_rgba(255,255,255,0.35)]");
+            dot.classList.remove("bg-white/20");
+          } else {
+            dot.classList.add("bg-white/20");
+            dot.classList.remove("bg-white", "shadow-[0_0_12px_rgba(255,255,255,0.35)]");
+          }
+        });
+        steps.forEach((step, i) => {
+          if (i === index) {
+            step.classList.add("opacity-100", "translate-y-0");
+            step.classList.remove("opacity-60", "translate-y-6");
+          } else {
+            step.classList.add("opacity-60", "translate-y-6");
+            step.classList.remove("opacity-100", "translate-y-0");
+          }
+        });
+      };
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            const index = Number(entry.target.getAttribute("data-about-step"));
+            activate(index);
+          });
+        },
+        { threshold: 0.6 }
+      );
+
+      steps.forEach((step) => observer.observe(step));
+      dots.forEach((dot) => {
+        dot.addEventListener("click", () => {
+          const index = Number(dot.getAttribute("data-about-dot"));
+          const target = steps[index];
+          if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      });
+
+      steps.forEach((step) => {
+        const slides = Array.from(step.querySelectorAll("[data-about-slide]"));
+        const prev = step.querySelector("[data-about-prev]");
+        const next = step.querySelector("[data-about-next]");
+        const dots = Array.from(step.querySelectorAll("[data-about-carousel-dot]"));
+        const carousel = step.querySelector("[data-about-carousel]");
+        if (!slides.length || !prev || !next || !carousel) return;
+        let index = 0;
+        const render = () => {
+          slides.forEach((slide, i) => {
+            if (i === index) {
+              slide.classList.add("opacity-100", "scale-100");
+              slide.classList.remove("opacity-0", "scale-105");
+            } else {
+              slide.classList.add("opacity-0", "scale-105");
+              slide.classList.remove("opacity-100", "scale-100");
+            }
+          });
+          dots.forEach((dot, i) => {
+            if (i === index) {
+              dot.classList.add("bg-white");
+              dot.classList.remove("bg-white/30");
+            } else {
+              dot.classList.add("bg-white/30");
+              dot.classList.remove("bg-white");
+            }
+          });
+        };
+        const goPrev = () => {
+          index = (index - 1 + slides.length) % slides.length;
+          render();
+        };
+        const goNext = () => {
+          index = (index + 1) % slides.length;
+          render();
+        };
+        prev.addEventListener("click", (event) => {
+          event.stopPropagation();
+          goPrev();
+        });
+        next.addEventListener("click", (event) => {
+          event.stopPropagation();
+          goNext();
+        });
+        carousel.addEventListener("click", (event) => {
+          const rect = carousel.getBoundingClientRect();
+          const x = event.clientX - rect.left;
+          const third = rect.width / 3;
+          if (x < third) {
+            goPrev();
+          } else if (x > third * 2) {
+            goNext();
+          }
+        });
+        render();
+      });
+
+      activate(0);
+    })();
+  </script>
+</section>

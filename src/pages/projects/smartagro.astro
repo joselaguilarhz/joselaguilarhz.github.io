@@ -1,0 +1,96 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+  <article class="py-16">
+    <a href="/#work" class="text-xs uppercase tracking-[0.25em] text-zinc-400 transition hover:text-white">
+      <span data-lang="es">Volver</span>
+      <span data-lang="en">Back</span>
+    </a>
+
+    <div class="mt-6 grid gap-10 md:grid-cols-12">
+      <div class="md:col-span-8">
+        <p class="text-xs uppercase tracking-[0.3em] text-zinc-500">Case Study</p>
+        <h1 class="mt-4 text-4xl font-display md:text-6xl">
+          SmartAgro - Cuaderno de Campo
+        </h1>
+        <p class="mt-4 max-w-2xl text-zinc-300">
+          <span data-lang="es">
+            Plataforma agricola con trazabilidad, sensores y paneles para operaciones en campo.
+          </span>
+          <span data-lang="en">
+            Agriculture platform with traceability, sensors, and dashboards for field operations.
+          </span>
+        </p>
+      </div>
+
+      <div class="md:col-span-4">
+        <div class="rounded-3xl border border-white/10 bg-white/4 p-6 transition-transform duration-300 ease-out hover:scale-[1.02]">
+          <div class="space-y-4 text-sm text-zinc-300">
+            <div class="flex items-center justify-between text-xs uppercase tracking-[0.2em] text-zinc-500">
+              <span data-lang="es">Rol</span>
+              <span data-lang="en">Role</span>
+              <span class="text-zinc-300">Full-Stack</span>
+            </div>
+            <div class="flex items-center justify-between text-xs uppercase tracking-[0.2em] text-zinc-500">
+              <span>Stack</span>
+              <span class="text-zinc-300">React - Flask - MySQL</span>
+            </div>
+            <div class="flex items-center justify-between text-xs uppercase tracking-[0.2em] text-zinc-500">
+              <span data-lang="es">Datos</span>
+              <span data-lang="en">Data</span>
+              <span class="text-zinc-300">LoRaWAN - Influx</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="mt-14 grid gap-10 md:grid-cols-12">
+      <div class="md:col-span-4">
+        <h2 class="text-2xl font-display">El problema</h2>
+      </div>
+      <div class="md:col-span-8 text-zinc-300">
+        <p data-lang="es">
+          La operacion diaria estaba fragmentada: cuaderno de campo, sensores y cumplimiento en
+          sistemas distintos. Hacia falta una vista unica y confiable.
+        </p>
+        <p data-lang="en">
+          Daily operations were fragmented: field notebook, sensors, and compliance lived in
+          different systems. A single reliable view was needed.
+        </p>
+      </div>
+    </section>
+
+    <section class="mt-10 grid gap-10 md:grid-cols-12">
+      <div class="md:col-span-4">
+        <h2 class="text-2xl font-display">La solucion</h2>
+      </div>
+      <div class="md:col-span-8 text-zinc-300">
+        <p data-lang="es">
+          Backend modular, paneles por rol y dashboards para decisiones rapidas. Todo conectado con
+          sensores y trazabilidad normativa.
+        </p>
+        <p data-lang="en">
+          Modular backend, role-based dashboards, and fast decision support. Fully connected to
+          sensors and compliance traceability.
+        </p>
+      </div>
+    </section>
+
+    <section class="mt-10 grid gap-10 md:grid-cols-12">
+      <div class="md:col-span-4">
+        <h2 class="text-2xl font-display">Arquitectura</h2>
+      </div>
+      <div class="md:col-span-8 text-zinc-300">
+        <ul class="space-y-2 text-sm">
+          <li>- Ingesta IoT (LoRaWAN/ChirpStack) a series temporales.</li>
+          <li>- API modular para cuaderno, explotaciones y tratamientos.</li>
+          <li>- Frontend React para operacion en campo y reporting.</li>
+          <li>- Observabilidad basica para calidad de datos.</li>
+        </ul>
+      </div>
+    </section>
+  </article>
+</BaseLayout>

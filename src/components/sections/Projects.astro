@@ -1,0 +1,50 @@
+---
+import Section from "../ui/Section.astro";
+import ProjectCard from "../ui/ProjectCard.astro";
+---
+
+<Section
+  id="work"
+  number="03"
+  titleEs="Proyectos clave"
+  titleEn="Key projects"
+  subtitleEs="Problema, arquitectura y resultado."
+  subtitleEn="Problem, architecture, outcome."
+>
+  <div class="grid gap-6 md:grid-cols-2">
+    <ProjectCard
+      href="/projects/smartagro"
+      year="2024"
+      role="Full-Stack"
+      titleEs="SmartAgro - Cuaderno de Campo"
+      titleEn="SmartAgro - Field Notebook"
+      descriptionEs="Trazabilidad agricola, sensores, dashboards y cumplimiento en una sola plataforma."
+      descriptionEn="Traceability, sensors, dashboards and compliance in one platform."
+      tags={["IoT", "Dashboards", "Compliance"]}
+    />
+    <ProjectCard
+      href="#"
+      year="2023"
+      role="IoT"
+      titleEs="INSIGNIA"
+      titleEn="INSIGNIA"
+      descriptionEs="Riego inteligente e interoperable para comunidades de regantes."
+      descriptionEn="Smart, interoperable irrigation for water communities."
+      tags={["IoT", "Water", "Interoperability"]}
+    />
+    <ProjectCard
+      href="#"
+      year="2022"
+      role="Data"
+      titleEs="RIGACORE"
+      titleEn="RIGACORE"
+      descriptionEs="Modelos predictivos y gestion autonoma de recursos y energia."
+      descriptionEn="Predictive models and autonomous resource and energy management."
+      tags={["AI", "Energy", "Prediction"]}
+    />
+    <div class="rounded-3xl border border-dashed border-white/10 bg-white/2 p-6 text-sm text-zinc-400">
+      <p data-lang="es">Mas casos en camino. Aqui agregaremos el resto de proyectos.</p>
+      <p data-lang="en">More case studies coming. This space will host the full archive.</p>
+    </div>
+  </div>
+</Section>

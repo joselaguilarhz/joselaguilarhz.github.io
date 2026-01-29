@@ -1,0 +1,43 @@
+---
+import Section from "../ui/Section.astro";
+---
+
+<Section
+  id="skills"
+  number="02"
+  titleEs="Capacidades principales"
+  titleEn="Core capabilities"
+  subtitleEs="Lo importante, claro y con impacto."
+  subtitleEn="The essentials, clear and high-impact."
+>
+  <div class="grid gap-4 md:grid-cols-2">
+    <div class="rounded-3xl border border-white/10 bg-white/4 p-6 transition-transform duration-300 ease-out hover:scale-[1.02]">
+      <p class="text-lg font-semibold text-white">Backend (Python / Java)</p>
+      <p class="mt-2 text-base text-zinc-300">
+        <span data-lang="es">APIs, microservicios, autenticacion, ORM, SQL e InfluxDB.</span>
+        <span data-lang="en">APIs, microservices, auth, ORM, SQL and InfluxDB.</span>
+      </p>
+    </div>
+    <div class="rounded-3xl border border-white/10 bg-white/4 p-6 transition-transform duration-300 ease-out hover:scale-[1.02]">
+      <p class="text-lg font-semibold text-white">Frontend (React / Angular)</p>
+      <p class="mt-2 text-base text-zinc-300">
+        <span data-lang="es">UI limpia, componentes reutilizables, SPA y rendimiento.</span>
+        <span data-lang="en">Clean UI, reusable components, SPA and performance.</span>
+      </p>
+    </div>
+    <div class="rounded-3xl border border-white/10 bg-white/4 p-6 transition-transform duration-300 ease-out hover:scale-[1.02]">
+      <p class="text-lg font-semibold text-white">IoT & Smart Agro</p>
+      <p class="mt-2 text-base text-zinc-300">
+        <span data-lang="es">LoRaWAN, sensorizacion campo-nube, dashboards con Grafana.</span>
+        <span data-lang="en">LoRaWAN, field-to-cloud sensing, dashboards with Grafana.</span>
+      </p>
+    </div>
+    <div class="rounded-3xl border border-white/10 bg-white/4 p-6 transition-transform duration-300 ease-out hover:scale-[1.02]">
+      <p class="text-lg font-semibold text-white">Datos y DevOps</p>
+      <p class="mt-2 text-base text-zinc-300">
+        <span data-lang="es">SQL, ETL, Docker, Linux, Nginx y despliegues.</span>
+        <span data-lang="en">SQL, ETL, Docker, Linux, Nginx and deployments.</span>
+      </p>
+    </div>
+  </div>
+</Section>

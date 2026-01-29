@@ -1,0 +1,34 @@
+---
+import Section from "../ui/Section.astro";
+---
+
+<Section
+  id="contact"
+  number="04"
+  titleEs="Hablemos"
+  titleEn="Let's talk"
+  subtitleEs="Disponible para colaboraciones, consultoria o proyectos IoT."
+  subtitleEn="Open to collaborations, consulting, or IoT projects."
+>
+  <div class="flex flex-wrap gap-3">
+    <a
+      href="mailto:tu-email@ejemplo.com"
+      class="rounded-2xl bg-white px-5 py-3 text-sm font-semibold text-zinc-900"
+    >
+      <span data-lang="es">Enviar email</span>
+      <span data-lang="en">Send email</span>
+    </a>
+    <a
+      href="#"
+      class="rounded-2xl border border-white/15 bg-white/5 px-5 py-3 text-sm text-zinc-200 transition hover:bg-white/10"
+    >
+      GitHub
+    </a>
+    <a
+      href="#"
+      class="rounded-2xl border border-white/15 bg-white/5 px-5 py-3 text-sm text-zinc-200 transition hover:bg-white/10"
+    >
+      LinkedIn
+    </a>
+  </div>
+</Section>
