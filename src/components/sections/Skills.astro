@@ -1,5 +1,18 @@
 ---
 import Section from "../ui/Section.astro";
+import astro from "../../assets/techs/astro.png";
+import docker from "../../assets/techs/docker.png";
+import grafana from "../../assets/techs/grafana.png";
+import influxdb from "../../assets/techs/influxdb.png";
+import java from "../../assets/techs/java.png";
+import linux from "../../assets/techs/linux.png";
+import python from "../../assets/techs/python.png";
+import react from "../../assets/techs/react.png";
+import springboot from "../../assets/techs/springboot.png";
+import tailwind from "../../assets/techs/tailwind.png";
+import awscloud from "../../assets/techs/awscloud.png";
+import vercel from "../../assets/techs/vercel.png";
+import github from "../../assets/techs/github.png";
 ---
 
 <Section
@@ -17,6 +30,12 @@ import Section from "../ui/Section.astro";
         <span data-lang="es">APIs, microservicios, autenticacion, ORM, SQL e InfluxDB.</span>
         <span data-lang="en">APIs, microservices, auth, ORM, SQL and InfluxDB.</span>
       </p>
+      <div class="mt-4 flex flex-wrap items-center gap-3">
+        <img src={python.src} alt="Python" class="h-6 w-6 object-contain opacity-80" />
+        <img src={java.src} alt="Java" class="h-6 w-6 object-contain opacity-80" />
+        <img src={springboot.src} alt="Spring Boot" class="h-6 w-6 object-contain opacity-80" />
+        <img src={influxdb.src} alt="InfluxDB" class="h-6 w-6 object-contain opacity-80" />
+      </div>
     </div>
     <div class="rounded-3xl border border-white/10 bg-white/4 p-6 transition-transform duration-300 ease-out hover:scale-[1.02]">
       <p class="text-lg font-semibold text-white">Frontend (React / Angular)</p>
@@ -24,6 +43,12 @@ import Section from "../ui/Section.astro";
         <span data-lang="es">UI limpia, componentes reutilizables, SPA y rendimiento.</span>
         <span data-lang="en">Clean UI, reusable components, SPA and performance.</span>
       </p>
+      <div class="mt-4 flex flex-wrap items-center gap-3">
+        <img src={react.src} alt="React" class="h-6 w-6 object-contain opacity-80" />
+        <img src={astro.src} alt="Astro" class="h-6 w-6 object-contain opacity-80" />
+        <img src={tailwind.src} alt="Tailwind" class="h-6 w-6 object-contain opacity-80" />
+        <img src={vercel.src} alt="Vercel" class="h-6 w-6 object-contain opacity-80" />
+      </div>
     </div>
     <div class="rounded-3xl border border-white/10 bg-white/4 p-6 transition-transform duration-300 ease-out hover:scale-[1.02]">
       <p class="text-lg font-semibold text-white">IoT & Smart Agro</p>
@@ -31,6 +56,11 @@ import Section from "../ui/Section.astro";
         <span data-lang="es">LoRaWAN, sensorizacion campo-nube, dashboards con Grafana.</span>
         <span data-lang="en">LoRaWAN, field-to-cloud sensing, dashboards with Grafana.</span>
       </p>
+      <div class="mt-4 flex flex-wrap items-center gap-3">
+        <img src={grafana.src} alt="Grafana" class="h-6 w-6 object-contain opacity-80" />
+        <img src={awscloud.src} alt="AWS" class="h-6 w-6 object-contain opacity-80" />
+        <img src={docker.src} alt="Docker" class="h-6 w-6 object-contain opacity-80" />
+      </div>
     </div>
     <div class="rounded-3xl border border-white/10 bg-white/4 p-6 transition-transform duration-300 ease-out hover:scale-[1.02]">
       <p class="text-lg font-semibold text-white">Datos y DevOps</p>
@@ -38,6 +68,11 @@ import Section from "../ui/Section.astro";
         <span data-lang="es">SQL, ETL, Docker, Linux, Nginx y despliegues.</span>
         <span data-lang="en">SQL, ETL, Docker, Linux, Nginx and deployments.</span>
       </p>
+      <div class="mt-4 flex flex-wrap items-center gap-3">
+        <img src={linux.src} alt="Linux" class="h-6 w-6 object-contain opacity-80" />
+        <img src={docker.src} alt="Docker" class="h-6 w-6 object-contain opacity-80" />
+        <img src={github.src} alt="GitHub" class="h-6 w-6 object-contain opacity-80" />
+      </div>
     </div>
   </div>
 </Section>
