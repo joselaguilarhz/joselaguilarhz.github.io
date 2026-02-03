@@ -86,6 +86,20 @@ const isExternal = typeof href === "string" && href.startsWith("http");
         <span data-lang="es">{descriptionEs}</span>
         <span data-lang="en">{descriptionEn}</span>
       </div>
+
+      <div class="flex flex-wrap gap-3 text-xs uppercase tracking-[0.2em]">
+        {isExternal && (
+          <a
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="rounded-full border border-white/20 bg-white/10 px-4 py-2 text-zinc-100 transition hover:border-white/40 hover:bg-white/20"
+          >
+            <span data-lang="es">Visitar web</span>
+            <span data-lang="en">Visit site</span>
+          </a>
+        )}
+      </div>
     </div>
   </div>
   </details>
