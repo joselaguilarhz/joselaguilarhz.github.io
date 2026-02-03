@@ -1,6 +1,7 @@
 ---
 import Section from "../ui/Section.astro";
 import ProjectCard from "../ui/ProjectCard.astro";
+import cuadernoCampo from "../../assets/cuadernocampo.jpg";
 ---
 
 <Section
@@ -11,40 +12,66 @@ import ProjectCard from "../ui/ProjectCard.astro";
   subtitleEs="Problema, arquitectura y resultado."
   subtitleEn="Problem, architecture, outcome."
 >
-  <div class="grid gap-6 md:grid-cols-2">
+  <div class="grid gap-6">
     <ProjectCard
       href="/projects/smartagro"
-      year="2024"
-      role="Full-Stack"
+      year="2025 - 2026 | SMARTFÉNIX"
+      role="FULL STACK - IA - DEVOPS - REGULACIÓN"
       titleEs="SmartAgro - Cuaderno de Campo"
       titleEn="SmartAgro - Field Notebook"
-      descriptionEs="Trazabilidad agricola, sensores, dashboards y cumplimiento en una sola plataforma."
+      descriptionEs="Trazabilidad agricola, integración de sensores, dashboards, métricas y cumplimiento de la regulación en una sola plataforma."
       descriptionEn="Traceability, sensors, dashboards and compliance in one platform."
       tags={["IoT", "Dashboards", "Compliance"]}
+      image={cuadernoCampo}
+      imageAlt="Cuaderno de Campo"
     />
     <ProjectCard
-      href="#"
-      year="2023"
-      role="IoT"
+      href="https://my-rutine-eta.vercel.app/"
+      preview="https://my-rutine-eta.vercel.app/"
+      year="2026"
+      role="Proyecto propio"
+      titleEs="My Rutine (App en desarrollo)"
+      titleEn="My Rutine"
+      descriptionEs="App personal para organizar rutinas diarias de ejercicio y seguimiento de hábitos."
+      descriptionEn="Personal app to organize daily routines and habit tracking."
+      tags={["Gimnasio", "Astro", "Vercel", "Productividad", "UI"]}
+    />
+    <ProjectCard
+      href="https://life-os-rho-pearl.vercel.app/"
+      preview="https://life-os-rho-pearl.vercel.app/"
+      year="2026"
+      role="Proyecto propio"
+      titleEs="Life OS (Red Social en desarrollo)"
+      titleEn="Life OS"
+      descriptionEs="Red Social donde poder hacer un seguimiento de todo lo que consumes y haces y poder publicarlo."
+      descriptionEn="Personal dashboard for metrics, goals and visual organization."
+      tags={["Astro", "Social", "Vercel", "Dashboard", "UI"]}
+    />
+    <ProjectCard
+      href="https://www.smartfenix.es/insignia/"
+      preview="https://www.smartfenix.es/insignia/"
+      year="2025 - SMARTFÉNIX"
+      role="IoT - FULL STACK"
       titleEs="INSIGNIA"
       titleEn="INSIGNIA"
-      descriptionEs="Riego inteligente e interoperable para comunidades de regantes."
-      descriptionEn="Smart, interoperable irrigation for water communities."
-      tags={["IoT", "Water", "Interoperability"]}
+      descriptionEs="Tecnologia inteligente, interoperable y sostenible para la gestion del riego, con solucion en la nube que integra sensores y actuadores para optimizar agua y energia."
+      descriptionEn="Smart, interoperable, sustainable irrigation management with a cloud solution integrating devices, sensors and actuators to optimize water and energy."
+      tags={["IoT", "Cloud", "Interoperability", "Water"]}
     />
     <ProjectCard
-      href="#"
-      year="2022"
-      role="Data"
+      href="https://www.smartfenix.es/rigacore/"
+      preview="https://www.smartfenix.es/rigacore/"
+      year="2025 - SMARTFÉNIX"
+      role="IA"
       titleEs="RIGACORE"
       titleEn="RIGACORE"
-      descriptionEs="Modelos predictivos y gestion autonoma de recursos y energia."
-      descriptionEn="Predictive models and autonomous resource and energy management."
-      tags={["AI", "Energy", "Prediction"]}
+      descriptionEs="Proyecto de investigacion para la gestion eficiente del agua: digitalizacion del regadio y gestion energetica con modelos predictivos y autonomos."
+      descriptionEn="Research project for efficient water management: irrigation digitalization and energy management with predictive, autonomous models."
+      tags={["Water", "Digitalization", "Prediction", "Energy"]}
     />
     <div class="rounded-3xl border border-dashed border-white/10 bg-white/2 p-6 text-sm text-zinc-400">
-      <p data-lang="es">Mas casos en camino. Aqui agregaremos el resto de proyectos.</p>
-      <p data-lang="en">More case studies coming. This space will host the full archive.</p>
+      <p data-lang="es">Más proyectos en camino. Intento sacar tiempo libre para desarrollar y traer novedades.</p>
+      <p data-lang="en">More projects coming soon. I'm trying to find time to develop and bring new things.</p>
     </div>
   </div>
 </Section>

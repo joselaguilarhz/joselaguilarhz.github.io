@@ -19,6 +19,7 @@ const { id, number, titleEs, titleEn, subtitleEs, subtitleEn } = Astro.props;
             {subtitleEn && <span data-lang="en">{subtitleEn}</span>}
           </p>
         )}
+        <slot name="aside" />
       </div>
 
       <div class="md:col-span-8">

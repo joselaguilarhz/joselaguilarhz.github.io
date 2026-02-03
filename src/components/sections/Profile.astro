@@ -1,0 +1,126 @@
+﻿---
+import Section from "../ui/Section.astro";
+import profilePortrait from "../../assets/cracovia.png";
+---
+
+<Section
+  id="profile"
+  number="01"
+  titleEs="Perfil"
+  titleEn="Profile"
+  subtitleEs="Quien soy, lo que hago y lo que he hecho."
+  subtitleEn="Who I am, what I do, and what I have done."
+>
+
+  <div slot="aside" class="mt-6 overflow-hidden rounded-3xl border border-white/10 bg-white/5">
+    <div class="aspect-[2/3] w-full">
+      <img
+        src={profilePortrait.src}
+        alt="Retrato de Jose Luis Aguilar"
+        class="h-full w-full object-cover"
+        loading="lazy"
+      />
+    </div>
+  </div>
+  <div class="grid gap-6 md:grid-cols-2">
+    <div class="rounded-3xl border border-white/10 bg-white/4 p-6">
+      <p class="text-xs uppercase tracking-[0.25em] text-zinc-400">
+        <span data-lang="es">Quien soy</span>
+        <span data-lang="en">Who I am</span>
+      </p>
+      <p class="mt-4 text-base text-zinc-300" data-lang="es">
+        Soy Jose Luis Aguilar, desarrollador Full-Stack con origen en la automatizacion
+        industrial y programación de PLC's. Actualmente lidero SMART AGRO en Smart Fénix, integrando sensorizacion IoT,
+        despliegue de servidores y visualizacion de datos en una plataforma propia.
+      </p>
+      <p class="mt-4 text-base text-zinc-300" data-lang="en">
+        I am Jose Luis Aguilar, a Full-Stack and IoT developer with industrial automation roots.
+        I currently lead SMART AGRO at Smart Fenix, integrating IoT sensing, server deployments,
+        and data visualization in a proprietary platform.
+      </p>
+      <div class="mt-4 flex flex-wrap gap-2 text-[10px] uppercase tracking-[0.2em] text-zinc-500">
+        <span class="rounded-full border border-white/10 px-3 py-1">Inglés avanzado</span>
+        <span class="rounded-full border border-white/10 px-3 py-1">Carnet y vehiculo propio</span>
+        <span class="rounded-full border border-white/10 px-3 py-1">Disponibilidad total para traslado y viajes</span>
+      </div>
+    </div>
+
+    <div class="rounded-3xl border border-white/10 bg-white/4 p-6">
+      <p class="text-xs uppercase tracking-[0.25em] text-zinc-400">
+        <span data-lang="es">Que hago</span>
+        <span data-lang="en">What I do</span>
+      </p>
+      <p class="mt-4 text-base text-zinc-300" data-lang="es">
+        Trabajo a diario con Python y Java en backend, React y Astro en frontend, SQL, Postgre e
+        InfluxDB para datos, y Grafana para observabilidad. Tambien me encargo de despliegues en docker y vercel
+        y automatizacion en Linux y el mantinimiento de servidores.
+      </p>
+      <p class="mt-4 text-base text-zinc-300" data-lang="en">
+        I work daily with Python and Java on the backend, React and Angular on the frontend,
+        SQL and InfluxDB for data, and Grafana for observability. I also handle deployments
+        and automation on Linux.
+      </p>
+      <div class="mt-4 flex flex-wrap gap-2 text-[10px] uppercase tracking-[0.2em] text-zinc-500">
+        <span class="rounded-full border border-white/10 px-3 py-1">Python</span>
+        <span class="rounded-full border border-white/10 px-3 py-1">Java</span>
+        <span class="rounded-full border border-white/10 px-3 py-1">React</span>
+        <span class="rounded-full border border-white/10 px-3 py-1">Angular</span>
+        <span class="rounded-full border border-white/10 px-3 py-1">SQL</span>
+        <span class="rounded-full border border-white/10 px-3 py-1">InfluxDB</span>
+        <span class="rounded-full border border-white/10 px-3 py-1">Grafana</span>
+        <span class="rounded-full border border-white/10 px-3 py-1">Linux</span>
+      </div>
+    </div>
+
+    <div class="rounded-3xl border border-white/10 bg-white/4 p-6">
+      <p class="text-xs uppercase tracking-[0.25em] text-zinc-400">
+        <span data-lang="es">Formación</span>
+        <span data-lang="en">Education</span>
+      </p>
+      <ul class="mt-4 space-y-3 text-sm text-zinc-300">
+        <li>
+          <span data-lang="es">2023-2025 · Grado Superior en Desarrollo de Aplicaciones Multiplataforma (IES Antonio Gala)</span>
+          <span data-lang="en">2023-2025 · Higher VET in Multiplatform App Development (IES Antonio Gala)</span>
+        </li>
+        <li>
+          <span data-lang="es">2020-2022 · Grado Superior en Automatizacion y Robotica (Colegio Salesiano San Luis Rey)</span>
+          <span data-lang="en">2020-2022 · Higher VET in Automation and Robotics (Salesian School San Luis Rey)</span>
+        </li>
+        <li>
+          <span data-lang="es">2018-2020 · Bachillerato de Ciencias (IES Antonio Gala)</span>
+          <span data-lang="en">2018-2020 · Science Baccalaureate (IES Antonio Gala)</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="rounded-3xl border border-white/10 bg-white/4 p-6">
+      <p class="text-xs uppercase tracking-[0.25em] text-zinc-400">
+        <span data-lang="es">Lo que he hecho</span>
+        <span data-lang="en">What I have done</span>
+      </p>
+      <ul class="mt-4 space-y-3 text-sm text-zinc-300">
+        <li>
+          <span data-lang="es">2025-Actualidad · Desarrollador de software en Smart Fenix (lider SMART AGRO, IoT y datos).</span>
+          <span data-lang="en">2025-Present · Software developer at Smart Fenix (SMART AGRO lead, IoT and data).</span>
+        </li>
+         <li>
+          <span data-lang="es">2023-2025 · Hosteleria en Grupo MVP mientras estudiaba.</span>
+          <span data-lang="en">2023-2025 · Hospitality at Grupo MVP while studying.</span>
+        </li>
+        <li>
+          <span data-lang="es">2022-2023 · Automatismos industriales: PLC, cuadros electricos y lineas automaticas (Cosentino, Valeo).</span>
+          <span data-lang="en">2022-2023 · Industrial automation: PLCs, electrical panels and automated lines (Cosentino, Valeo).</span>
+        </li>
+          <li>
+          <span data-lang="es">2023 · Auringis Automatismos.</span>
+          <span data-lang="en">2023 · Auringis Automatismos.</span>
+        </li>
+        <li>
+          <span data-lang="es">2022 · Automatismos Brenton y Gomarsa Integracion (FCT).</span>
+          <span data-lang="en">2022 · Automatismos Brenton and Gomarsa Integracion (internship).</span>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</Section>

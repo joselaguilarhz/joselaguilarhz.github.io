@@ -1,8 +1,12 @@
 ---
-const placeholders = [
-  "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='675'><defs><linearGradient id='g' x1='0' x2='1'><stop offset='0%' stop-color='%230ea5e9'/><stop offset='100%' stop-color='%2322c55e'/></linearGradient></defs><rect width='1200' height='675' fill='url(%23g)'/><text x='50%' y='50%' fill='white' font-family='Space Grotesk, Arial' font-size='48' text-anchor='middle' dominant-baseline='middle'>Placeholder 01</text></svg>",
-  "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='675'><defs><linearGradient id='g' x1='0' x2='1'><stop offset='0%' stop-color='%2360a5fa'/><stop offset='100%' stop-color='%23a78bfa'/></linearGradient></defs><rect width='1200' height='675' fill='url(%23g)'/><text x='50%' y='50%' fill='white' font-family='Space Grotesk, Arial' font-size='48' text-anchor='middle' dominant-baseline='middle'>Placeholder 02</text></svg>",
-  "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='675'><defs><linearGradient id='g' x1='0' x2='1'><stop offset='0%' stop-color='%23f97316'/><stop offset='100%' stop-color='%23e11d48'/></linearGradient></defs><rect width='1200' height='675' fill='url(%23g)'/><text x='50%' y='50%' fill='white' font-family='Space Grotesk, Arial' font-size='48' text-anchor='middle' dominant-baseline='middle'>Placeholder 03</text></svg>",
+import origenIndustrial01 from "../../assets/origen_industrial/origen_industrial_01.jpeg";
+import origenIndustrial02 from "../../assets/origen_industrial/origen_industrial_02.jpeg";
+import origenIndustrial03 from "../../assets/origen_industrial/origen_industrial_03.jpeg";
+
+const origenIndustrial = [
+  origenIndustrial01.src,
+  origenIndustrial02.src,
+  origenIndustrial03.src,
 ];
 ---
 
@@ -51,22 +55,22 @@ const placeholders = [
 
           <div class="relative md:justify-self-end md:w-[80%]">
             <div class="overflow-hidden rounded-2xl border border-white/10 bg-black/30">
-              <div class="relative aspect-[4/3] md:aspect-[3/4]" data-about-carousel>
+              <div class="relative aspect-4/3 md:aspect-3/4" data-about-carousel>
                 <img
-                  src={placeholders[0]}
-                  alt="Placeholder 01"
+                  src={origenIndustrial01.src}
+                  alt="Origen industrial 01"
                   class="about-slide absolute inset-0 h-full w-full object-cover object-[50%_35%] opacity-100 scale-100 transition duration-500"
                   data-about-slide
                 />
                 <img
-                  src={placeholders[1]}
-                  alt="Placeholder 02"
+                  src={origenIndustrial02.src}
+                  alt="Origen industrial 02"
                   class="about-slide absolute inset-0 h-full w-full object-cover opacity-0 scale-105 transition duration-500"
                   data-about-slide
                 />
                 <img
-                  src={placeholders[2]}
-                  alt="Placeholder 03"
+                  src={origenIndustrial03.src}
+                  alt="Origen industrial 03"
                   class="about-slide absolute inset-0 h-full w-full object-cover opacity-0 scale-105 transition duration-500"
                   data-about-slide
                 />
@@ -118,22 +122,22 @@ const placeholders = [
 
           <div class="relative md:justify-self-end md:w-[80%]">
             <div class="overflow-hidden rounded-2xl border border-white/10 bg-black/30">
-              <div class="relative aspect-[4/3] md:aspect-[3/4]" data-about-carousel>
+              <div class="relative aspect-4/3 md:aspect-3/4" data-about-carousel>
                 <img
-                  src={placeholders[0]}
-                  alt="Placeholder 01"
+                  src={origenIndustrial01.src}
+                  alt="Origen industrial 01"
                   class="about-slide absolute inset-0 h-full w-full object-cover opacity-100 scale-100 transition duration-500"
                   data-about-slide
                 />
                 <img
-                  src={placeholders[1]}
-                  alt="Placeholder 02"
+                  src={origenIndustrial02.src}
+                  alt="Origen industrial 02"
                   class="about-slide absolute inset-0 h-full w-full object-cover opacity-0 scale-105 transition duration-500"
                   data-about-slide
                 />
                 <img
-                  src={placeholders[2]}
-                  alt="Placeholder 03"
+                  src={origenIndustrial03.src}
+                  alt="Origen industrial 03"
                   class="about-slide absolute inset-0 h-full w-full object-cover opacity-0 scale-105 transition duration-500"
                   data-about-slide
                 />
@@ -185,22 +189,22 @@ const placeholders = [
 
           <div class="relative md:justify-self-end md:w-[80%]">
             <div class="overflow-hidden rounded-2xl border border-white/10 bg-black/30">
-              <div class="relative aspect-[4/3] md:aspect-[3/4]" data-about-carousel>
+              <div class="relative aspect-4/3 md:aspect-3/4" data-about-carousel>
                 <img
-                  src={placeholders[0]}
-                  alt="Placeholder 01"
+                  src={origenIndustrial01.src}
+                  alt="Origen industrial 01"
                   class="about-slide absolute inset-0 h-full w-full object-cover opacity-100 scale-100 transition duration-500"
                   data-about-slide
                 />
                 <img
-                  src={placeholders[1]}
-                  alt="Placeholder 02"
+                  src={origenIndustrial02.src}
+                  alt="Origen industrial 02"
                   class="about-slide absolute inset-0 h-full w-full object-cover object-[50%_35%] opacity-0 scale-105 transition duration-500"
                   data-about-slide
                 />
                 <img
-                  src={placeholders[2]}
-                  alt="Placeholder 03"
+                  src={origenIndustrial03.src}
+                  alt="Origen industrial 03"
                   class="about-slide absolute inset-0 h-full w-full object-cover opacity-0 scale-105 transition duration-500"
                   data-about-slide
                 />

@@ -13,7 +13,7 @@ import react from "../../assets/techs/react.png";
 import springboot from "../../assets/techs/springboot.png";
 import tailwind from "../../assets/techs/tailwind.png";
 import vercel from "../../assets/techs/vercel.png";
-
+import facecard from "../../assets/facecard.png";
 const techs = [
   { src: react, label: "React", style: "top:8%; left:6%;", delay: 0 },
   { src: astro, label: "Astro", style: "top:10%; right:6%;", delay: 1 },
@@ -31,7 +31,7 @@ const techs = [
 ];
 ---
 
-<section class="relative min-h-[calc(100vh-10rem)] flex items-center justify-center -translate-y-40 overflow-hidden">
+<section class="relative min-h-[calc(100vh-10rem)] flex items-center justify-center -translate-y-40 overflow-hidden pt-12 md:pt-16">
   <div class="absolute inset-0 pointer-events-none">
     {techs.map((tech) => (
       <div class="hero-pop" style={`${tech.style} animation-delay:${tech.delay}s;`}>
@@ -44,9 +44,9 @@ const techs = [
   <div class="relative z-10 mx-auto max-w-4xl text-center">
     <div class="mx-auto mb-8 h-28 w-28 overflow-hidden rounded-full border border-white/20 bg-white/5 shadow-[0_0_60px_rgba(96,165,250,0.35)]">
       <img
-        src={memoji.src}
+        src={facecard.src}
         alt="Memoji Jose Luis"
-        class="h-full w-full object-cover object-[50%_55%] scale-125"
+        class="h-full w-full object-cover object-[50%_55%] scale-100"
         loading="eager"
         decoding="async"
       />

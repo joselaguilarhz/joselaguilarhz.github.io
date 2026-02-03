@@ -16,6 +16,30 @@ const projects: P[] = [
     tags: ["React", "Flask", "MySQL", "InfluxDB"],
   },
   {
+    title: "My Rutine",
+    desc: "App personal para organizar rutinas diarias y seguimiento de habitos.",
+    href: "https://my-rutine-eta.vercel.app/",
+    tags: ["Vercel", "Productividad", "UI"],
+  },
+  {
+    title: "Life OS",
+    desc: "Dashboard personal para metricas, objetivos y organizacion visual.",
+    href: "https://life-os-rho-pearl.vercel.app/",
+    tags: ["Vercel", "Dashboard", "UI"],
+  },
+  {
+    title: "INSIGNIA",
+    desc: "Gestion del riego inteligente con solucion en la nube para recursos hidricos y energeticos.",
+    href: "https://www.smartfenix.es/insignia/",
+    tags: ["IoT", "Cloud", "Water", "Energy"],
+  },
+  {
+    title: "RIGACORE",
+    desc: "Gestion eficiente del agua con digitalizacion del regadio y modelos predictivos.",
+    href: "https://www.smartfenix.es/rigacore/",
+    tags: ["Water", "Digitalization", "Prediction", "Energy"],
+  },
+  {
     title: "LifeOS",
     desc: "App personal tipo dashboard: métricas, mapas, hábitos y login.",
     href: "#",
